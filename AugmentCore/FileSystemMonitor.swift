@@ -5,6 +5,9 @@ public class FileSystemMonitor {
     /// Singleton instance
     public static let shared = FileSystemMonitor()
 
+    /// Configuration instance (temporarily commented out until file is added to project)
+    // private let configuration = AugmentConfiguration.shared
+
     /// The list of monitored spaces
     private var monitoredSpaces: [URL] = []
 
@@ -515,7 +518,7 @@ public class FileSystemMonitor {
         let now = Date()
         let filePath_string = filePath.path
 
-        // Check if we recently created a version for this file (within 5 seconds) - thread safe
+        // Check if we recently created a version for this file - thread safe
         let shouldSkip = throttlingQueue.sync {
             if let lastVersionTime = lastVersionCreationTimes[filePath_string],
                 now.timeIntervalSince(lastVersionTime) < 5.0
@@ -534,7 +537,7 @@ public class FileSystemMonitor {
             self.lastVersionCreationTimes[filePath_string] = now
 
             // CRITICAL FIX: More aggressive cleanup to prevent memory leaks
-            // Cleanup every 20 entries instead of 50 to prevent excessive memory usage
+            // Cleanup based on configuration to prevent excessive memory usage
             if self.lastVersionCreationTimes.count % 20 == 0 {
                 self.cleanupThrottlingEntries()
             }

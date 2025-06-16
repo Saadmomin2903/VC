@@ -17,6 +17,7 @@ public class DependencyContainer {
     private var _augmentFileSystem: AugmentFileSystem?
     private var _fileOperationInterceptor: FileOperationInterceptor?
     private var _storageManager: StorageManager?
+    // private var _configuration: AugmentConfiguration?
 
     // MARK: - Thread Safety
     private let containerQueue = DispatchQueue(
@@ -128,6 +129,18 @@ public class DependencyContainer {
         }
     }
 
+    /// Gets or creates AugmentConfiguration instance
+    // public func configuration() -> AugmentConfiguration {
+    //     return containerQueue.sync {
+    //         if let existing = _configuration {
+    //             return existing
+    //         }
+    //         let instance = AugmentConfiguration.shared
+    //         _configuration = instance
+    //         return instance
+    //     }
+    // }
+
     // MARK: - Testing Support
 
     /// Resets all dependencies - useful for testing
@@ -141,6 +154,7 @@ public class DependencyContainer {
             self._augmentFileSystem = nil
             self._fileOperationInterceptor = nil
             self._storageManager = nil
+            // self._configuration = nil
         }
     }
 
