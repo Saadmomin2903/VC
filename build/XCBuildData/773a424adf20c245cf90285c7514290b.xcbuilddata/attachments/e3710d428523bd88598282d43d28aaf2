@@ -1,0 +1,218 @@
+{
+  "" : {
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/Augment-master.dia",
+    "emit-module-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/Augment-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/Augment-master-emit-module.dia",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/Augment-master.swiftdeps"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/Augment/AugmentApp.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentApp.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentApp.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentApp.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentApp.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentApp.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentApp.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentApp.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentApp~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/Augment/ConflictResolutionView.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/Augment/ContentView.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/Augment/SearchView.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchView.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchView.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchView.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchView.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchView.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchView.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchView.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchView~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/Augment/SpaceDetailView.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SpaceDetailView.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SpaceDetailView.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SpaceDetailView.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/SpaceDetailView.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SpaceDetailView.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SpaceDetailView.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SpaceDetailView.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SpaceDetailView~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/Augment/VersionBrowser.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionBrowser.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionBrowser.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionBrowser.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionBrowser.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionBrowser.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionBrowser.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionBrowser.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionBrowser~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/AugmentSpace.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentSpace.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentSpace.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentSpace.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentSpace.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentSpace.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentSpace.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentSpace.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentSpace~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/BackupManager.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/ConflictResolution.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolution.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolution.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolution.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolution.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolution.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolution.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolution.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolution~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/FileItem.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileItem.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileItem.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileItem.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileItem.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileItem.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileItem.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileItem.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileItem~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/FileSystemMonitor.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileSystemMonitor.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileSystemMonitor.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileSystemMonitor.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileSystemMonitor.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileSystemMonitor.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileSystemMonitor.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileSystemMonitor.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileSystemMonitor~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/FileType.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/NetworkSync.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/NetworkSync.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/NetworkSync.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/NetworkSync.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/NetworkSync.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/NetworkSync.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/NetworkSync.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/NetworkSync.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/NetworkSync~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/PreviewEngine.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/SearchEngine.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchEngine.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchEngine.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchEngine.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchEngine.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchEngine.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchEngine.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchEngine.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SearchEngine~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/SnapshotManager.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SnapshotManager.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SnapshotManager.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SnapshotManager.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/SnapshotManager.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SnapshotManager.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SnapshotManager.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SnapshotManager.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/SnapshotManager~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/VersionControl.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentFileSystem/AugmentFUSE.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFUSE.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFUSE.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFUSE.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFUSE.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFUSE.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFUSE.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFUSE.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFUSE~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentFileSystem/AugmentFileSystem.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/AugmentFileSystem/FileOperationInterceptor.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor~partial.swiftmodule"
+  },
+  "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Augment.build/Debug/Augment.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

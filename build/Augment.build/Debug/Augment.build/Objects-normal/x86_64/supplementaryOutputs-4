@@ -1,0 +1,18 @@
+"/Users/saadmomin/Desktop/space/AugmentApp/Augment/SearchView.swift":
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SearchView.o"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SearchView.swiftdeps"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SearchView.d"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SearchView.swiftconstvalues"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SearchView.dia"
+"/Users/saadmomin/Desktop/space/AugmentApp/Augment/ConflictResolutionView.swift":
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ConflictResolutionView.dia"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ConflictResolutionView.d"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ConflictResolutionView.o"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ConflictResolutionView.swiftconstvalues"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ConflictResolutionView.swiftdeps"
+"/Users/saadmomin/Desktop/space/AugmentApp/Augment/VersionBrowser.swift":
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionBrowser.d"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionBrowser.swiftconstvalues"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionBrowser.o"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionBrowser.swiftdeps"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionBrowser.dia"

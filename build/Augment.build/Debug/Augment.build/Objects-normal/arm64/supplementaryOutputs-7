@@ -1,0 +1,18 @@
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/FileType.swift":
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.swiftconstvalues"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.dia"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.d"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.swiftdeps"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileType.o"
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentFileSystem/AugmentFileSystem.swift":
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.swiftconstvalues"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.o"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.d"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.dia"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/AugmentFileSystem.swiftdeps"
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/VersionControl.swift":
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.swiftconstvalues"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.swiftdeps"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.d"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.o"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/VersionControl.dia"

@@ -1,0 +1,18 @@
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentFileSystem/AugmentFileSystem.swift":
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentFileSystem.swiftconstvalues"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentFileSystem.dia"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentFileSystem.d"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentFileSystem.swiftdeps"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentFileSystem.o"
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/VersionControl.swift":
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionControl.dia"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionControl.swiftconstvalues"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionControl.o"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionControl.d"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/VersionControl.swiftdeps"
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/FileType.swift":
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileType.dia"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileType.d"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileType.swiftconstvalues"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileType.swiftdeps"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileType.o"

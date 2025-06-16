@@ -1,0 +1,18 @@
+"/Users/saadmomin/Desktop/space/AugmentApp/Augment/ContentView.swift":
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ContentView.dia"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ContentView.d"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ContentView.swiftdeps"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ContentView.o"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/ContentView.swiftconstvalues"
+"/Users/saadmomin/Desktop/space/AugmentApp/Augment/AugmentApp.swift":
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentApp.d"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentApp.dia"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentApp.swiftconstvalues"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentApp.swiftdeps"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/AugmentApp.o"
+"/Users/saadmomin/Desktop/space/AugmentApp/Augment/SpaceDetailView.swift":
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SpaceDetailView.o"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SpaceDetailView.dia"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SpaceDetailView.d"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SpaceDetailView.swiftconstvalues"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/SpaceDetailView.swiftdeps"

@@ -1,0 +1,88 @@
+{
+  "source": "/Users/saadmomin/Documents/space/AugmentApp/Augment/AugmentApp.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Augment",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Preferences",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Preferences...",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Preferences",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Augment Spaces",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 199
+        }
+      },
+      {
+        "comment": "",
+        "key": "No spaces available",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create New Space...",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 219
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Space...",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 223
+        }
+      },
+      {
+        "comment": "",
+        "key": "Preferences...",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 229
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quit",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 236
+        }
+      }
+    ]
+  },
+  "version": 1
+}

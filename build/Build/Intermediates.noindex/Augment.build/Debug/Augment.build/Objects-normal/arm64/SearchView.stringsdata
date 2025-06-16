@@ -1,0 +1,88 @@
+{
+  "source": "/Users/saadmomin/Documents/space/AugmentApp/Augment/SearchView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Search in version history",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Searching...",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "No results found",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 95
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search across all versions",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 105
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter a search term and select the spaces to search in.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select a result to preview",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open in Finder",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 230
+        }
+      },
+      {
+        "comment": "",
+        "key": "View Version History",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 223
+        }
+      }
+    ]
+  },
+  "version": 1
+}

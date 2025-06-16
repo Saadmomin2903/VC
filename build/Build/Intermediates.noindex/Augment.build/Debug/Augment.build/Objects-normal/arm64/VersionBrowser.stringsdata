@@ -1,0 +1,240 @@
+{
+  "source": "/Users/saadmomin/Documents/space/AugmentApp/Augment/VersionBrowser.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Version History: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Compare",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Compare",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "Restore",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Restore to This Version",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Compare From This Version",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Compare To This Version",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select a version to preview",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "No differences",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 313
+        }
+      },
+      {
+        "comment": "",
+        "key": "Show Overlay",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 356
+        }
+      },
+      {
+        "comment": "",
+        "key": "Before",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 384
+        }
+      },
+      {
+        "comment": "",
+        "key": "After",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 395
+        }
+      },
+      {
+        "comment": "",
+        "key": "Binary File Comparison",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 437
+        }
+      },
+      {
+        "comment": "",
+        "key": "The files are different, but a visual comparison is not available for this file type.",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 442
+        }
+      },
+      {
+        "comment": "",
+        "key": "Original Version",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 450
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 453
+        }
+      },
+      {
+        "comment": "",
+        "key": "Size: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 454
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Version",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 461
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 464
+        }
+      },
+      {
+        "comment": "",
+        "key": "Size: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 465
+        }
+      },
+      {
+        "comment": "",
+        "key": "Restore Version",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 499
+        }
+      },
+      {
+        "comment": "",
+        "key": "Are you sure you want to restore this version?",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 502
+        }
+      },
+      {
+        "comment": "",
+        "key": "Comment (optional)",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 519
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version Date: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 506
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version Comment: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 510
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 523
+        }
+      },
+      {
+        "comment": "",
+        "key": "Restore",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 530
+        }
+      }
+    ]
+  },
+  "version": 1
+}

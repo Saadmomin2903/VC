@@ -1,0 +1,18 @@
+"/Users/saadmomin/Documents/space/AugmentApp/AugmentCore/PreviewEngine.swift":
+  swift-dependencies: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.swiftdeps"
+  diagnostics: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.dia"
+  dependencies: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.d"
+  const-values: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.swiftconstvalues"
+  object: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.o"
+"/Users/saadmomin/Documents/space/AugmentApp/Augment/ConflictResolutionView.swift":
+  swift-dependencies: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.swiftdeps"
+  diagnostics: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.dia"
+  object: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.o"
+  dependencies: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.d"
+  const-values: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/ConflictResolutionView.swiftconstvalues"
+"/Users/saadmomin/Documents/space/AugmentApp/AugmentCore/BackupManager.swift":
+  dependencies: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.d"
+  object: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.o"
+  const-values: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.swiftconstvalues"
+  diagnostics: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.dia"
+  swift-dependencies: "/Users/saadmomin/Documents/space/AugmentApp/build/Build/Intermediates.noindex/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.swiftdeps"

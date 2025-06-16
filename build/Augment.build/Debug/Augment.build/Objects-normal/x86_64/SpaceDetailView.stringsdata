@@ -1,0 +1,400 @@
+{
+  "source": "/Users/saadmomin/Desktop/space/AugmentApp/Augment/SpaceDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Snapshots - Coming Soon",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Network Sync - Coming Soon",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Conflict Resolution - Coming Soon",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open in Finder",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Loading version history...",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "No versioned files",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "Files will appear here once you start creating versions",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 153
+        }
+      },
+      {
+        "comment": "",
+        "key": "View History",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld versions",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 200
+        }
+      },
+      {
+        "comment": "",
+        "key": "No file selected",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 208
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "Space Settings",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 310
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version Control",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 315
+        }
+      },
+      {
+        "comment": "",
+        "key": "Space Information",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 337
+        }
+      },
+      {
+        "comment": "",
+        "key": "Automatic Versioning",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 316
+        }
+      },
+      {
+        "comment": "",
+        "key": "Automatically create versions when files are modified",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 317
+        }
+      },
+      {
+        "comment": "",
+        "key": "Retention Period:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 320
+        }
+      },
+      {
+        "comment": "",
+        "key": "days",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 325
+        }
+      },
+      {
+        "comment": "",
+        "key": "Days",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 322
+        }
+      },
+      {
+        "comment": "",
+        "key": "Max Versions per File:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 329
+        }
+      },
+      {
+        "comment": "",
+        "key": "Count",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 331
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 339
+        }
+      },
+      {
+        "comment": "",
+        "key": "Path:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 346
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 357
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 364
+        }
+      },
+      {
+        "comment": "",
+        "key": "Files in %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 417
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sort",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 432
+        }
+      },
+      {
+        "comment": "",
+        "key": "Hidden",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 441
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search files...",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 426
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 433
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 434
+        }
+      },
+      {
+        "comment": "",
+        "key": "Size",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 435
+        }
+      },
+      {
+        "comment": "",
+        "key": "Versions",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 436
+        }
+      },
+      {
+        "comment": "",
+        "key": "Loading files...",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 461
+        }
+      },
+      {
+        "comment": "",
+        "key": "No files in this space",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 474
+        }
+      },
+      {
+        "comment": "",
+        "key": "No files match your search",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 474
+        }
+      },
+      {
+        "comment": "",
+        "key": "•",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 501
+        }
+      },
+      {
+        "comment": "",
+        "key": "•",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 510
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld versions",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 514
+        }
+      },
+      {
+        "comment": "",
+        "key": "View Version History",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 538
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create Version Now",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 545
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open in Finder",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 551
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open with Default App",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 556
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 578
+        }
+      },
+      {
+        "comment": "",
+        "key": "No file selected",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 586
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 590
+        }
+      }
+    ]
+  },
+  "version": 1
+}

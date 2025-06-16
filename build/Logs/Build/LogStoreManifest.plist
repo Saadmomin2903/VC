@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>CC128A16-1445-4602-BDB0-4A0ECB3D8323</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CC128A16-1445-4602-BDB0-4A0ECB3D8323.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Augment project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Augment</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Augment with scheme Augment and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>771511716.47427702</real>
+			<key>timeStoppedRecording</key>
+			<real>771511736.54524696</real>
+			<key>title</key>
+			<string>Building project Augment with scheme Augment and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>CC128A16-1445-4602-BDB0-4A0ECB3D8323</string>
+		</dict>
+		<key>DEE84598-2653-4A35-92B1-7E08674009B5</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DEE84598-2653-4A35-92B1-7E08674009B5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Augment project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Augment</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Augment with scheme Augment and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>771511772.07779706</real>
+			<key>timeStoppedRecording</key>
+			<real>771511780.78745306</real>
+			<key>title</key>
+			<string>Building project Augment with scheme Augment and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>DEE84598-2653-4A35-92B1-7E08674009B5</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

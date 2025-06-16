@@ -1,0 +1,18 @@
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/BackupManager.swift":
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/BackupManager.swiftdeps"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/BackupManager.d"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/BackupManager.swiftconstvalues"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/BackupManager.dia"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/BackupManager.o"
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/PreviewEngine.swift":
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/PreviewEngine.swiftdeps"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/PreviewEngine.o"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/PreviewEngine.swiftconstvalues"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/PreviewEngine.d"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/PreviewEngine.dia"
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentFileSystem/FileOperationInterceptor.swift":
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileOperationInterceptor.swiftconstvalues"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileOperationInterceptor.d"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileOperationInterceptor.o"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileOperationInterceptor.dia"
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/x86_64/FileOperationInterceptor.swiftdeps"

@@ -1,0 +1,32 @@
+{
+  "source": "/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/FileItem.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "•",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "•",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 180
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld versions",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 184
+        }
+      }
+    ]
+  },
+  "version": 1
+}

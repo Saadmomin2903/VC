@@ -1,0 +1,18 @@
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentFileSystem/FileOperationInterceptor.swift":
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.swiftdeps"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.swiftconstvalues"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.dia"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.d"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/FileOperationInterceptor.o"
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/BackupManager.swift":
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.swiftdeps"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.o"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.d"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.dia"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/BackupManager.swiftconstvalues"
+"/Users/saadmomin/Desktop/space/AugmentApp/AugmentCore/PreviewEngine.swift":
+  swift-dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.swiftdeps"
+  object: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.o"
+  diagnostics: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.dia"
+  dependencies: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.d"
+  const-values: "/Users/saadmomin/Desktop/space/AugmentApp/build/Augment.build/Debug/Augment.build/Objects-normal/arm64/PreviewEngine.swiftconstvalues"

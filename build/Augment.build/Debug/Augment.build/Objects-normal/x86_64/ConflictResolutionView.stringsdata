@@ -1,0 +1,168 @@
+{
+  "source": "/Users/saadmomin/Desktop/space/AugmentApp/Augment/ConflictResolutionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Resolve Conflict: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Resolve",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "Merge resolution is not available for image files. Please choose to use local, remote, or keep both versions.",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "Resolution:",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Use Local Version",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Use Remote Version",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Merge Both Versions",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "Keep Both as Copies",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "Merge Resolution",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "Review both versions below. The system will attempt to merge them automatically.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Local Version",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "Modified: %@",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 106
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remote Version",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 130
+        }
+      },
+      {
+        "comment": "",
+        "key": "Modified: %@",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 136
+        }
+      },
+      {
+        "comment": "",
+        "key": "Local Version",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "Modified: %@",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remote Version",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "Modified: %@",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "Both versions will be kept as separate files. The conflicting version will be saved with a suffix.",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 240
+        }
+      }
+    ]
+  },
+  "version": 1
+}

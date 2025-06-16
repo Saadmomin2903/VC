@@ -1,0 +1,200 @@
+{
+  "source": "/Users/saadmomin/Documents/space/AugmentApp/Augment/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "SPACES",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "CONFLICTS",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Browse Files & Version History",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search in Space",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open in Finder",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "View Snapshots",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rename",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "Welcome to Augment",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select a space from the sidebar to browse files and view version history, or create a new space to get started.",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "Comprehensive File Version History",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Automatic version creation when files are modified",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Complete version history with timestamps and comments",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Side-by-side file comparison and diff viewing",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 121
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Safe file rollback with automatic backups",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Integrated search across all your spaces",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 125
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create New Space",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 138
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search Files",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create New Augment Space",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 333
+        }
+      },
+      {
+        "comment": "",
+        "key": "Space Name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 337
+        }
+      },
+      {
+        "comment": "",
+        "key": "Location",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 341
+        }
+      },
+      {
+        "comment": "",
+        "key": "Browse...",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 344
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 352
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 357
+        }
+      }
+    ]
+  },
+  "version": 1
+}
