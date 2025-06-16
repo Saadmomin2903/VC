@@ -3,11 +3,11 @@ import Foundation
 /// Dependency injection container for managing Augment application dependencies
 /// This replaces the singleton anti-pattern with proper dependency injection
 public class DependencyContainer {
-    
+
     // MARK: - Singleton for backward compatibility
     /// Shared instance for backward compatibility during transition
     public static let shared = DependencyContainer()
-    
+
     // MARK: - Core Dependencies
     private var _metadataManager: MetadataManager?
     private var _versionControl: VersionControl?
@@ -16,18 +16,19 @@ public class DependencyContainer {
     private var _backupManager: BackupManager?
     private var _augmentFileSystem: AugmentFileSystem?
     private var _fileOperationInterceptor: FileOperationInterceptor?
-    
+    private var _storageManager: StorageManager?
+
     // MARK: - Thread Safety
     private let containerQueue = DispatchQueue(
-        label: "com.augment.dependencycontainer", 
+        label: "com.augment.dependencycontainer",
         attributes: .concurrent
     )
-    
+
     /// Private initializer
     private init() {}
-    
+
     // MARK: - Dependency Factories
-    
+
     /// Gets or creates MetadataManager instance
     public func metadataManager() -> MetadataManager {
         return containerQueue.sync {
@@ -39,7 +40,7 @@ public class DependencyContainer {
             return instance
         }
     }
-    
+
     /// Gets or creates VersionControl instance
     public func versionControl() -> VersionControl {
         return containerQueue.sync {
@@ -51,7 +52,7 @@ public class DependencyContainer {
             return instance
         }
     }
-    
+
     /// Gets or creates SearchEngine instance
     public func searchEngine() -> SearchEngine {
         return containerQueue.sync {
@@ -63,7 +64,7 @@ public class DependencyContainer {
             return instance
         }
     }
-    
+
     /// Gets or creates FileSystemMonitor instance
     public func fileSystemMonitor() -> FileSystemMonitor {
         return containerQueue.sync {
@@ -75,7 +76,7 @@ public class DependencyContainer {
             return instance
         }
     }
-    
+
     /// Gets or creates BackupManager instance
     public func backupManager() -> BackupManager {
         return containerQueue.sync {
@@ -87,7 +88,7 @@ public class DependencyContainer {
             return instance
         }
     }
-    
+
     /// Gets or creates AugmentFileSystem instance
     public func augmentFileSystem() -> AugmentFileSystem {
         return containerQueue.sync {
@@ -99,7 +100,7 @@ public class DependencyContainer {
             return instance
         }
     }
-    
+
     /// Gets or creates FileOperationInterceptor instance
     public func fileOperationInterceptor() -> FileOperationInterceptor {
         return containerQueue.sync {
@@ -114,9 +115,21 @@ public class DependencyContainer {
             return instance
         }
     }
-    
+
+    /// Gets or creates StorageManager instance
+    public func storageManager() -> StorageManager {
+        return containerQueue.sync {
+            if let existing = _storageManager {
+                return existing
+            }
+            let instance = StorageManager()
+            _storageManager = instance
+            return instance
+        }
+    }
+
     // MARK: - Testing Support
-    
+
     /// Resets all dependencies - useful for testing
     public func reset() {
         containerQueue.async(flags: .barrier) {
@@ -127,45 +140,46 @@ public class DependencyContainer {
             self._backupManager = nil
             self._augmentFileSystem = nil
             self._fileOperationInterceptor = nil
+            self._storageManager = nil
         }
     }
-    
+
     /// Creates a new container with fresh dependencies - useful for testing
     public static func createTestContainer() -> DependencyContainer {
         let container = DependencyContainer()
         return container
     }
-    
+
     // MARK: - Dependency Injection Helpers
-    
+
     /// Injects custom MetadataManager instance (for testing)
     public func inject(metadataManager: MetadataManager) {
         containerQueue.async(flags: .barrier) {
             self._metadataManager = metadataManager
         }
     }
-    
+
     /// Injects custom VersionControl instance (for testing)
     public func inject(versionControl: VersionControl) {
         containerQueue.async(flags: .barrier) {
             self._versionControl = versionControl
         }
     }
-    
+
     /// Injects custom SearchEngine instance (for testing)
     public func inject(searchEngine: SearchEngine) {
         containerQueue.async(flags: .barrier) {
             self._searchEngine = searchEngine
         }
     }
-    
+
     /// Injects custom FileSystemMonitor instance (for testing)
     public func inject(fileSystemMonitor: FileSystemMonitor) {
         containerQueue.async(flags: .barrier) {
             self._fileSystemMonitor = fileSystemMonitor
         }
     }
-    
+
     /// Injects custom BackupManager instance (for testing)
     public func inject(backupManager: BackupManager) {
         containerQueue.async(flags: .barrier) {
@@ -182,8 +196,8 @@ public protocol DependencyInjectable {
 }
 
 /// Default implementation for dependency injection
-public extension DependencyInjectable {
-    var dependencies: DependencyContainer {
+extension DependencyInjectable {
+    public var dependencies: DependencyContainer {
         return DependencyContainer.shared
     }
 }

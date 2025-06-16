@@ -97,6 +97,29 @@ public struct SpaceSettings: Codable, Hashable {
     /// Network sync configuration
     public var syncConfiguration: SimpleSyncConfiguration = SimpleSyncConfiguration()
 
+    // MARK: - Storage Management Settings
+
+    /// Whether storage management is enabled
+    public var storageManagementEnabled: Bool = true
+
+    /// Maximum storage size in bytes (0 = unlimited)
+    public var maxStorageBytes: Int64 = 10 * 1024 * 1024 * 1024  // 10GB default
+
+    /// Maximum age for versions in days (0 = unlimited)
+    public var maxVersionAgeDays: Int = 365  // 1 year default
+
+    /// Storage warning threshold (0.0 to 1.0)
+    public var storageWarningThreshold: Double = 0.8  // 80%
+
+    /// Whether to automatically cleanup old versions
+    public var autoCleanupEnabled: Bool = true
+
+    /// Cleanup frequency in hours
+    public var cleanupFrequencyHours: Int = 24  // Daily cleanup
+
+    /// Whether to show storage notifications
+    public var storageNotificationsEnabled: Bool = true
+
     public init() {}
 }
 

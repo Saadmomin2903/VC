@@ -11,6 +11,15 @@ struct PreferencesView: View {
     @State private var conflictResolutionStrategy: ConflictStrategy = .ask
     @State private var indexingEnabled = true
 
+    // Storage settings
+    @State private var storageManagementEnabled = true
+    @State private var maxStorageGB: Double = 10.0
+    @State private var maxVersionAgeDays = 365
+    @State private var storageWarningThreshold: Double = 80.0
+    @State private var autoCleanupEnabled = true
+    @State private var cleanupFrequencyHours = 24
+    @State private var storageNotificationsEnabled = true
+
     var body: some View {
         TabView(selection: $selectedTab) {
             // General tab
@@ -35,6 +44,21 @@ struct PreferencesView: View {
             }
             .tag(1)
 
+            // Storage tab
+            StoragePreferencesView(
+                storageManagementEnabled: $storageManagementEnabled,
+                maxStorageGB: $maxStorageGB,
+                maxVersionAgeDays: $maxVersionAgeDays,
+                storageWarningThreshold: $storageWarningThreshold,
+                autoCleanupEnabled: $autoCleanupEnabled,
+                cleanupFrequencyHours: $cleanupFrequencyHours,
+                storageNotificationsEnabled: $storageNotificationsEnabled
+            )
+            .tabItem {
+                Label("Storage", systemImage: "internaldrive")
+            }
+            .tag(2)
+
             // Advanced tab
             AdvancedPreferencesView(
                 conflictResolutionStrategy: $conflictResolutionStrategy,
@@ -43,7 +67,7 @@ struct PreferencesView: View {
             .tabItem {
                 Label("Advanced", systemImage: "slider.horizontal.3")
             }
-            .tag(2)
+            .tag(3)
         }
         .padding(20)
         .frame(width: 500, height: 400)
@@ -213,4 +237,113 @@ enum ConflictStrategy {
     case keepLocal
     case keepRemote
     case keepBoth
+}
+
+// MARK: - Storage Preferences View
+
+struct StoragePreferencesView: View {
+    @Binding var storageManagementEnabled: Bool
+    @Binding var maxStorageGB: Double
+    @Binding var maxVersionAgeDays: Int
+    @Binding var storageWarningThreshold: Double
+    @Binding var autoCleanupEnabled: Bool
+    @Binding var cleanupFrequencyHours: Int
+    @Binding var storageNotificationsEnabled: Bool
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            Text("Storage Management")
+                .font(.title)
+                .padding(.bottom, 10)
+
+            GroupBox(label: Text("Storage Limits")) {
+                VStack(alignment: .leading, spacing: 15) {
+                    Toggle("Enable storage management", isOn: $storageManagementEnabled)
+                        .padding(.vertical, 5)
+
+                    if storageManagementEnabled {
+                        VStack(alignment: .leading, spacing: 10) {
+                            HStack {
+                                Text("Maximum storage per space:")
+                                Spacer()
+                                TextField("GB", value: $maxStorageGB, format: .number)
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .frame(width: 80)
+                                Text("GB")
+                            }
+
+                            HStack {
+                                Text("Warning threshold:")
+                                Spacer()
+                                TextField("%", value: $storageWarningThreshold, format: .number)
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .frame(width: 80)
+                                Text("%")
+                            }
+
+                            Text(
+                                "Augment will warn you when storage usage exceeds this percentage."
+                            )
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                        }
+                        .padding(.leading, 20)
+                    }
+                }
+                .padding(10)
+            }
+
+            GroupBox(label: Text("Automatic Cleanup")) {
+                VStack(alignment: .leading, spacing: 15) {
+                    Toggle("Enable automatic cleanup", isOn: $autoCleanupEnabled)
+                        .padding(.vertical, 5)
+
+                    if autoCleanupEnabled {
+                        VStack(alignment: .leading, spacing: 10) {
+                            HStack {
+                                Text("Remove versions older than:")
+                                Spacer()
+                                TextField("Days", value: $maxVersionAgeDays, format: .number)
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .frame(width: 80)
+                                Text("days")
+                            }
+
+                            HStack {
+                                Text("Cleanup frequency:")
+                                Spacer()
+                                TextField("Hours", value: $cleanupFrequencyHours, format: .number)
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .frame(width: 80)
+                                Text("hours")
+                            }
+
+                            Text(
+                                "Automatic cleanup runs in the background to maintain storage limits."
+                            )
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                        }
+                        .padding(.leading, 20)
+                    }
+                }
+                .padding(10)
+            }
+
+            GroupBox(label: Text("Notifications")) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Toggle("Show storage notifications", isOn: $storageNotificationsEnabled)
+                        .padding(.vertical, 5)
+
+                    Text("Receive notifications when storage limits are approached or exceeded.")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
+                .padding(10)
+            }
+
+            Spacer()
+        }
+        .padding()
+    }
 }
