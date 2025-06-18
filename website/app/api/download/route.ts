@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { headers } from 'next/headers'
 import path from 'path'
 import fs from 'fs'
 
@@ -59,10 +58,9 @@ export async function GET(request: NextRequest) {
     }
     
     const config = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
-    const headersList = headers()
-    const userAgent = headersList.get('user-agent') || 'Unknown'
-    const ip = headersList.get('x-forwarded-for') || 
-              headersList.get('x-real-ip') || 
+    const userAgent = request.headers.get('user-agent')?.toString() || 'Unknown'
+    const ip = request.headers.get('x-forwarded-for')?.toString() || 
+              request.headers.get('x-real-ip')?.toString() || 
               'Unknown'
     
     // Track the download
