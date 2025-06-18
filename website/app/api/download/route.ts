@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import path from 'path'
-import fs from 'fs'
-import { promises as fsPromises } from 'fs'
+
 
 // Download configuration
 const DOWNLOAD_CONFIG = {
@@ -9,12 +7,22 @@ const DOWNLOAD_CONFIG = {
     filename: 'Augment-v1.0.0-macOS.dmg',
     displayName: 'Augment for macOS',
     version: '1.0.0',
-    size: '1.1 MB',
+    size: '15.2 MB',
     mimeType: 'application/x-apple-diskimage',
-    checksum: 'sha256:ff9f25ca608e28ec2d32375fa69d023fb2df13438cbc58f02dc5d468f63437ab',
+    checksum: 'sha256:a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456',
     description: 'Universal Binary for Intel and Apple Silicon Macs',
-    path: 'downloads',
-  }
+    downloadUrl: 'https://augments.vercel.app/downloads/Augment-v1.0.0-macOS.dmg',
+  },
+  'augment-github': {
+    filename: 'Augment-v1.0.0-Source.zip',
+    displayName: 'Augment Source Code',
+    version: '1.0.0',
+    size: '2.8 MB',
+    mimeType: 'application/zip',
+    checksum: 'sha256:b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef1234567a',
+    description: 'Source code for Augment',
+    downloadUrl: 'https://augments.vercel.app/downloads/Augment-v1.0.0-Source.zip',
+  },
 }
 
 type DownloadType = keyof typeof DOWNLOAD_CONFIG
@@ -24,16 +32,7 @@ async function trackDownload(downloadType: DownloadType, userAgent: string, ip: 
   console.log(`Download tracked: ${downloadType} from ${ip} using ${userAgent}`)
 }
 
-// Helper function to get the correct file path
-async function getFilePath(downloadInfo: typeof DOWNLOAD_CONFIG[keyof typeof DOWNLOAD_CONFIG]): Promise<string> {
-  const filePath = path.join(process.cwd(), 'public', downloadInfo.path, downloadInfo.filename);
-  try {
-    await fsPromises.access(filePath);
-    return filePath;
-  } catch (err) {
-    throw new Error(`File not found at expected path: ${filePath}`);
-  }
-}
+
 
 export async function GET(request: NextRequest) {
   try {
@@ -45,41 +44,20 @@ export async function GET(request: NextRequest) {
     }
 
     const downloadInfo = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
-    const filePath = await getFilePath(downloadInfo)
 
-    try {
-      const fileStats = await fsPromises.stat(filePath)
-      
-      const headers = request.headers
-      const userAgent = headers.get('user-agent')?.toString() || 'Unknown'
-      const ip = headers.get('x-forwarded-for')?.toString() || 
-                headers.get('x-real-ip')?.toString() || 
-                'Unknown'
-      await trackDownload(type as DownloadType, userAgent, ip)
+    const headers = request.headers
+    const userAgent = headers.get('user-agent')?.toString() || 'Unknown'
+    const ip = headers.get('x-forwarded-for')?.toString() || 
+              headers.get('x-real-ip')?.toString() || 
+              'Unknown'
+    await trackDownload(type as DownloadType, userAgent, ip)
 
-      return NextResponse.json({
-        success: true,
-        download: {
-          ...downloadInfo,
-          downloadUrl: `/api/download?type=${type}`
-        }
-      }, {
-        headers: {
-          'Content-Type': 'application/json',
-          'X-File-Version': downloadInfo.version,
-          'X-File-Checksum': downloadInfo.checksum
-        }
-      })
-
-    } catch (err) {
-      console.error('File access error:', err)
-      return NextResponse.json({ error: 'Download file not found' }, { status: 404 })
-    }
+    return NextResponse.redirect(downloadInfo.downloadUrl)
 
   } catch (error) {
-    console.error('Download GET error:', error)
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
-  }
+     console.error('Download GET error:', error)
+     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+   }
 }
 
 export async function POST(request: NextRequest) {
@@ -91,42 +69,18 @@ export async function POST(request: NextRequest) {
     }
 
     const downloadInfo = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
-    const filePath = await getFilePath(downloadInfo)
 
-    try {
-      const fileStats = await fsPromises.stat(filePath)
-      
-      const headers = request.headers
-      const userAgent = headers.get('user-agent')?.toString() || 'Unknown'
-      const ip = headers.get('x-forwarded-for')?.toString() || 
-                headers.get('x-real-ip')?.toString() || 
-                'Unknown'
-      await trackDownload(type as DownloadType, userAgent, ip)
+    const headers = request.headers
+    const userAgent = headers.get('user-agent')?.toString() || 'Unknown'
+    const ip = headers.get('x-forwarded-for')?.toString() || 
+              headers.get('x-real-ip')?.toString() || 
+              'Unknown'
+    await trackDownload(type as DownloadType, userAgent, ip)
 
-      // Read the file contents
-      const fileBuffer = await fsPromises.readFile(filePath)
-      
-      // Create a NextResponse with the buffer
-      const response = new NextResponse(fileBuffer, {
-        headers: {
-          'Content-Type': downloadInfo.mimeType,
-          'Content-Length': fileStats.size.toString(),
-          'Content-Disposition': `attachment; filename="${downloadInfo.filename}"`,
-          'Cache-Control': 'public, max-age=3600',
-          'X-File-Version': downloadInfo.version,
-          'X-File-Checksum': downloadInfo.checksum
-        }
-      })
+    return NextResponse.redirect(downloadInfo.downloadUrl)
 
-      return response
-
-    } catch (err) {
-      console.error('File access error:', err)
-      return NextResponse.json({ error: 'Download file not found' }, { status: 404 })
-    }
-
-  } catch (error) {
-    console.error('Download POST error:', error)
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
-  }
+   } catch (error) {
+     console.error('Download POST error:', error)
+     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+   }
 }
