@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { Response } from 'next/dist/server/web/spec-extension/response'
 import path from 'path'
 import fs from 'fs'
 import { promises as fsPromises } from 'fs'
