@@ -21,7 +21,7 @@ const DOWNLOAD_CONFIG = {
     mimeType: 'application/zip',
     checksum: 'sha256:b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef1234567a',
     description: 'Source code for Augment',
-    downloadUrl: 'https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/Augment-v1.0.0-Source-G4zE3Wr6C6n9jlZxaLCE3jzkNYA4BM.zip',
+    downloadUrl: 'https://github.com/user-attachments/files/20803204/Augment-v1.0.0-macOS.dmg.zip',
   },
 }
 
@@ -77,7 +77,13 @@ export async function POST(request: NextRequest) {
               'Unknown'
     await trackDownload(type as DownloadType, userAgent, ip)
 
-    return NextResponse.redirect(downloadInfo.downloadUrl)
+    // Return download information as JSON instead of redirecting
+    return NextResponse.json({ 
+      download: {
+        ...downloadInfo,
+        timestamp: new Date().toISOString()
+      }
+    })
 
    } catch (error) {
      console.error('Download POST error:', error)
