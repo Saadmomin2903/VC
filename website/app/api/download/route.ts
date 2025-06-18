@@ -54,7 +54,8 @@ export async function GET(request: NextRequest) {
     }
 
     const downloadInfo = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
-    const filePath = path.join(process.cwd(), 'public', downloadInfo.path.substring(1))
+    // Corrected line: Removed .substring(1)
+    const filePath = path.join(process.cwd(), 'public', downloadInfo.path)
 
     try {
       const fileStats = await fsPromises.stat(filePath)
@@ -100,7 +101,8 @@ export async function POST(request: NextRequest) {
     }
 
     const downloadInfo = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
-    const filePath = path.join(process.cwd(), 'public', downloadInfo.path.substring(1))
+    // Corrected line: Removed .substring(1)
+    const filePath = path.join(process.cwd(), 'public', downloadInfo.path)
 
     try {
       const fileStats = await fsPromises.stat(filePath)
