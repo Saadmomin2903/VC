@@ -21,7 +21,7 @@ const DOWNLOAD_CONFIG = {
     mimeType: 'application/zip',
     checksum: 'sha256:b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef1234567a',
     description: 'Source code for Augment',
-    downloadUrl: 'https://augments.vercel.app/downloads/Augment-v1.0.0-Source.zip',
+    downloadUrl: 'https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/Augment-v1.0.0-Source-G4zE3Wr6C6n9jlZxaLCE3jzkNYA4BM.zip',
   },
 }
 
