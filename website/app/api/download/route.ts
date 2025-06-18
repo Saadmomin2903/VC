@@ -26,22 +26,13 @@ async function trackDownload(downloadType: DownloadType, userAgent: string, ip: 
 
 // Helper function to get the correct file path
 async function getFilePath(downloadInfo: typeof DOWNLOAD_CONFIG[keyof typeof DOWNLOAD_CONFIG]): Promise<string> {
-  const pathsToTry = [
-    path.join(process.cwd(), 'public', 'downloads', downloadInfo.filename),
-    path.join(process.cwd(), 'downloads', downloadInfo.filename),
-    path.join(process.cwd(), 'public', downloadInfo.path)
-  ];
-
-  for (const tryPath of pathsToTry) {
-    try {
-      await fsPromises.access(tryPath);
-      return tryPath;
-    } catch (err) {
-      continue;
-    }
+  const filePath = path.join(process.cwd(), 'public', downloadInfo.path, downloadInfo.filename);
+  try {
+    await fsPromises.access(filePath);
+    return filePath;
+  } catch (err) {
+    throw new Error(`File not found at expected path: ${filePath}`);
   }
-
-  throw new Error('File not found at any path');
 }
 
 export async function GET(request: NextRequest) {
@@ -54,8 +45,7 @@ export async function GET(request: NextRequest) {
     }
 
     const downloadInfo = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
-    // Corrected line: Removed .substring(1)
-    const filePath = path.join(process.cwd(), 'public', downloadInfo.path)
+    const filePath = await getFilePath(downloadInfo)
 
     try {
       const fileStats = await fsPromises.stat(filePath)
@@ -101,8 +91,7 @@ export async function POST(request: NextRequest) {
     }
 
     const downloadInfo = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
-    // Corrected line: Removed .substring(1)
-    const filePath = path.join(process.cwd(), 'public', downloadInfo.path)
+    const filePath = await getFilePath(downloadInfo)
 
     try {
       const fileStats = await fsPromises.stat(filePath)
