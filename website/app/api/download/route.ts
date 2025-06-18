@@ -11,7 +11,7 @@ const DOWNLOAD_CONFIG = {
     mimeType: 'application/x-apple-diskimage',
     checksum: 'sha256:a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456',
     description: 'Universal Binary for Intel and Apple Silicon Macs',
-    downloadUrl: 'https://augments.vercel.app/downloads/Augment-v1.0.0-macOS.dmg',
+    downloadUrl: 'https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/Augment-v1.0.0-macOS-G4zE3Wr6C6n9jlZxaLCE3jzkNYA4BM.dmg',
   },
   'augment-github': {
     filename: 'Augment-v1.0.0-Source.zip',
