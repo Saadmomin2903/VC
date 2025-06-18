@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augment - Never Lose Work Again</title>
+    <meta name="description" content="Augment is an intelligent file versioning system for macOS that automatically saves every version of your files, so you never lose work again.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg class="nav-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+                <span class="nav-title">Augment</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#download" class="nav-link nav-link-primary">Download</a>
+            </div>
+            <div class="nav-mobile">
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Never Lose Work Again
+                </h1>
+                <p class="hero-subtitle">
+                    Augment automatically saves every version of your files, so you can focus on creating without worrying about losing your work.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download for macOS
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21 5,3"/>
+                        </svg>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Automatic</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Versions</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Lost Files</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <div class="control control-close"></div>
+                            <div class="control control-minimize"></div>
+                            <div class="control control-maximize"></div>
+                        </div>
+                        <div class="window-title">Augment</div>
+                    </div>
+                    <div class="window-content">
+                        <div class="file-list">
+                            <div class="file-item">
+                                <div class="file-icon">📄</div>
+                                <div class="file-info">
+                                    <div class="file-name">Project Proposal.docx</div>
+                                    <div class="file-versions">12 versions</div>
+                                </div>
+                                <div class="file-status">
+                                    <div class="status-indicator active"></div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">🎨</div>
+                                <div class="file-info">
+                                    <div class="file-name">Design Mockup.sketch</div>
+                                    <div class="file-versions">8 versions</div>
+                                </div>
+                                <div class="file-status">
+                                    <div class="status-indicator active"></div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">📊</div>
+                                <div class="file-info">
+                                    <div class="file-name">Budget Analysis.xlsx</div>
+                                    <div class="file-versions">5 versions</div>
+                                </div>
+                                <div class="file-status">
+                                    <div class="status-indicator active"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <div class="problem-content">
+                <h2 class="section-title">The Problem We All Face</h2>
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <div class="problem-icon">😰</div>
+                        <h3>Lost Work</h3>
+                        <p>Crashes, accidental deletions, and overwrites destroy hours of work</p>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">🗂️</div>
+                        <h3>File Chaos</h3>
+                        <p>final_v2_FINAL_really_final.doc - we've all been there</p>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">⏰</div>
+                        <h3>Manual Backups</h3>
+                        <p>Remembering to save copies is tedious and error-prone</p>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">🔍</div>
+                        <h3>Can't Find Versions</h3>
+                        <p>When you need an old version, it's nowhere to be found</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="section-title">How Augment Solves This</h2>
+                <p class="section-subtitle">Intelligent file versioning that works automatically in the background</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Automatic Versioning</h3>
+                    <p class="feature-description">Every time you save a file, Augment automatically creates a version. No manual work required.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Storage</h3>
+                    <p class="feature-description">Efficient compression and deduplication means versions take up minimal space on your drive.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Instant Search</h3>
+                    <p class="feature-description">Find any version of any file instantly with powerful search across all your content.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="1,4 1,10 7,10"/>
+                            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">One-Click Restore</h3>
+                    <p class="feature-description">Restore any previous version with a single click. Compare versions side-by-side.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Always Protected</h3>
+                    <p class="feature-description">Your files are continuously protected. Even if your computer crashes, your work is safe.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21,15 16,10 5,21"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Native macOS</h3>
+                    <p class="feature-description">Built specifically for macOS with native performance and seamless Finder integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="how-it-works-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Set up in minutes, protected for life</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Choose Your Folders</h3>
+                        <p class="step-description">Select the folders you want to protect. Documents, Projects, Desktop - whatever matters to you.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="folder-selector">
+                            <div class="folder-item selected">
+                                <span class="folder-icon">📁</span>
+                                <span class="folder-name">Documents</span>
+                                <span class="folder-check">✓</span>
+                            </div>
+                            <div class="folder-item selected">
+                                <span class="folder-icon">📁</span>
+                                <span class="folder-name">Projects</span>
+                                <span class="folder-check">✓</span>
+                            </div>
+                            <div class="folder-item">
+                                <span class="folder-icon">📁</span>
+                                <span class="folder-name">Desktop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Work Normally</h3>
+                        <p class="step-description">Continue working as you always do. Augment runs silently in the background, creating versions automatically.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="work-simulation">
+                            <div class="typing-indicator">
+                                <span class="cursor">|</span>
+                                <span class="text">Writing important document...</span>
+                            </div>
+                            <div class="save-indicator">
+                                <span class="save-icon">💾</span>
+                                <span class="save-text">Auto-saved version 1.2.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Access Anytime</h3>
+                        <p class="step-description">Right-click any file to see its complete version history. Restore, compare, or browse previous versions instantly.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="context-menu">
+                            <div class="menu-item">Open</div>
+                            <div class="menu-item">Get Info</div>
+                            <div class="menu-separator"></div>
+                            <div class="menu-item highlighted">
+                                <span class="menu-icon">🕒</span>
+                                <span>View Version History</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <h2 class="section-title">Simple, Honest Pricing</h2>
+                <p class="section-subtitle">One price, all features, no subscriptions</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header-card">
+                        <h3 class="pricing-title">Free Trial</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">0</span>
+                            <span class="price-period">/ 30 days</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✓ Full feature access</div>
+                        <div class="feature">✓ Unlimited files</div>
+                        <div class="feature">✓ No watermarks</div>
+                        <div class="feature">✓ Email support</div>
+                    </div>
+                    <a href="#download" class="btn btn-secondary btn-full">Start Free Trial</a>
+                </div>
+                <div class="pricing-card pricing-card-featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header-card">
+                        <h3 class="pricing-title">Augment Pro</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">49</span>
+                            <span class="price-period">/ one-time</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✓ Everything in Free Trial</div>
+                        <div class="feature">✓ Lifetime updates</div>
+                        <div class="feature">✓ Priority support</div>
+                        <div class="feature">✓ Advanced search</div>
+                        <div class="feature">✓ Team collaboration</div>
+                    </div>
+                    <a href="#download" class="btn btn-primary btn-full">Buy Now</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header-card">
+                        <h3 class="pricing-title">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="price-text">Custom</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✓ Everything in Pro</div>
+                        <div class="feature">✓ Volume licensing</div>
+                        <div class="feature">✓ Custom deployment</div>
+                        <div class="feature">✓ Dedicated support</div>
+                    </div>
+                    <a href="mailto:enterprise@augmentapp.com" class="btn btn-secondary btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="section-title">Ready to Never Lose Work Again?</h2>
+                <p class="section-subtitle">Download Augment and start protecting your files today</p>
+                <div class="download-buttons">
+                    <a href="#" class="btn btn-primary btn-large" id="download-btn">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download for macOS
+                        <span class="btn-subtitle">Free 30-day trial</span>
+                    </a>
+                </div>
+                <div class="download-info">
+                    <div class="info-item">
+                        <span class="info-label">Version:</span>
+                        <span class="info-value">1.0.0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Size:</span>
+                        <span class="info-value">12.5 MB</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Requires:</span>
+                        <span class="info-value">macOS 12.0+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        <span>Augment</span>
+                    </div>
+                    <p class="footer-description">Never lose work again with intelligent file versioning for macOS.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#pricing" class="footer-link">Pricing</a>
+                        <a href="#download" class="footer-link">Download</a>
+                        <a href="#" class="footer-link">Release Notes</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Bug Reports</a>
+                        <a href="#" class="footer-link">Feature Requests</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Privacy</a>
+                        <a href="#" class="footer-link">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024 Augment. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
