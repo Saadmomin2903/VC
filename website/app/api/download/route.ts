@@ -58,9 +58,10 @@ export async function GET(request: NextRequest) {
     }
     
     const config = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
-    const userAgent = request.headers.get('user-agent')?.toString() || 'Unknown'
-    const ip = request.headers.get('x-forwarded-for')?.toString() || 
-              request.headers.get('x-real-ip')?.toString() || 
+    const headers = await request.headers
+    const userAgent = headers.get('user-agent')?.toString() || 'Unknown'
+    const ip = headers.get('x-forwarded-for')?.toString() || 
+              headers.get('x-real-ip')?.toString() || 
               'Unknown'
     
     // Track the download
