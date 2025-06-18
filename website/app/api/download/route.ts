@@ -13,7 +13,7 @@ const DOWNLOAD_CONFIG = {
     mimeType: 'application/x-apple-diskimage',
     checksum: 'sha256:ff9f25ca608e28ec2d32375fa69d023fb2df13438cbc58f02dc5d468f63437ab',
     description: 'Universal Binary for Intel and Apple Silicon Macs',
-    path: '/downloads/Augment-v1.0.0-macOS.dmg',
+    path: 'downloads',
   }
 }
 
@@ -22,6 +22,26 @@ type DownloadType = keyof typeof DOWNLOAD_CONFIG
 // Track download analytics
 async function trackDownload(downloadType: DownloadType, userAgent: string, ip: string) {
   console.log(`Download tracked: ${downloadType} from ${ip} using ${userAgent}`)
+}
+
+// Helper function to get the correct file path
+async function getFilePath(downloadInfo: typeof DOWNLOAD_CONFIG[keyof typeof DOWNLOAD_CONFIG]): Promise<string> {
+  const pathsToTry = [
+    path.join(process.cwd(), 'public', 'downloads', downloadInfo.filename),
+    path.join(process.cwd(), 'downloads', downloadInfo.filename),
+    path.join(process.cwd(), 'public', downloadInfo.path)
+  ];
+
+  for (const tryPath of pathsToTry) {
+    try {
+      await fsPromises.access(tryPath);
+      return tryPath;
+    } catch (err) {
+      continue;
+    }
+  }
+
+  throw new Error('File not found at any path');
 }
 
 export async function GET(request: NextRequest) {
