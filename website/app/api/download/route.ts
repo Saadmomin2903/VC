@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import path from 'path'
-import fs from 'fs/promises'
+import fs from 'fs'
+import { promises as fsPromises } from 'fs'
 
 // Download configuration
 const DOWNLOAD_CONFIG = {
@@ -23,9 +24,11 @@ async function trackDownload(downloadType: DownloadType, userAgent: string, ip: 
   console.log(`Download tracked: ${downloadType} from ${ip} using ${userAgent}`)
 }
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
   try {
-    const { type = 'augment-macos' } = await request.json()
+    const { searchParams } = new URL(request.url)
+    const type = searchParams.get('type') || 'augment-macos'
+    
     if (!DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]) {
       return NextResponse.json({ error: 'Invalid download type' }, { status: 400 })
     }
@@ -34,30 +37,80 @@ export async function POST(request: NextRequest) {
     const filePath = path.join(process.cwd(), 'public', downloadInfo.path.substring(1))
 
     try {
-      await fs.access(filePath)
+      const fileStats = await fsPromises.stat(filePath)
+      
+      const headers = request.headers
+      const userAgent = headers.get('user-agent')?.toString() || 'Unknown'
+      const ip = headers.get('x-forwarded-for')?.toString() || 
+                headers.get('x-real-ip')?.toString() || 
+                'Unknown'
+      await trackDownload(type as DownloadType, userAgent, ip)
+
+      return NextResponse.json({
+        success: true,
+        download: {
+          ...downloadInfo,
+          downloadUrl: `/api/download?type=${type}`
+        }
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-File-Version': downloadInfo.version,
+          'X-File-Checksum': downloadInfo.checksum
+        }
+      })
+
     } catch (err) {
+      console.error('File access error:', err)
       return NextResponse.json({ error: 'Download file not found' }, { status: 404 })
     }
 
-    const headers = request.headers
-    const userAgent = headers.get('user-agent')?.toString() || 'Unknown'
-    const ip = headers.get('x-forwarded-for')?.toString() || 
-              headers.get('x-real-ip')?.toString() || 
-              'Unknown'
-    await trackDownload(type as DownloadType, userAgent, ip)
+  } catch (error) {
+    console.error('Download GET error:', error)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+  }
+}
 
-    return NextResponse.json({
-      ...downloadInfo,
-      url: headers.get('x-forwarded-proto') === 'https' 
-        ? `https://${headers.get('host')}${downloadInfo.path}`
-        : `http://${headers.get('host')}${downloadInfo.path}`
-    }, {
-      headers: {
-        'Content-Type': 'application/json',
-        'X-File-Version': downloadInfo.version,
-        'X-File-Checksum': downloadInfo.checksum
-      }
-    })
+export async function POST(request: NextRequest) {
+  try {
+    const { type = 'augment-macos' } = await request.json()
+    
+    if (!DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]) {
+      return NextResponse.json({ error: 'Invalid download type' }, { status: 400 })
+    }
+
+    const downloadInfo = DOWNLOAD_CONFIG[type as keyof typeof DOWNLOAD_CONFIG]
+    const filePath = path.join(process.cwd(), 'public', downloadInfo.path.substring(1))
+
+    try {
+      const fileStats = await fsPromises.stat(filePath)
+      
+      const headers = request.headers
+      const userAgent = headers.get('user-agent')?.toString() || 'Unknown'
+      const ip = headers.get('x-forwarded-for')?.toString() || 
+                headers.get('x-real-ip')?.toString() || 
+                'Unknown'
+      await trackDownload(type as DownloadType, userAgent, ip)
+
+      // Read the file contents
+      const fileBuffer = await fsPromises.readFile(filePath)
+      
+      return new NextResponse(fileBuffer, {
+        status: 200,
+        headers: {
+          'Content-Type': downloadInfo.mimeType,
+          'Content-Length': fileStats.size.toString(),
+          'Content-Disposition': `attachment; filename="${downloadInfo.filename}"`,
+          'Cache-Control': 'public, max-age=3600',
+          'X-File-Version': downloadInfo.version,
+          'X-File-Checksum': downloadInfo.checksum
+        }
+      })
+
+    } catch (err) {
+      console.error('File access error:', err)
+      return NextResponse.json({ error: 'Download file not found' }, { status: 404 })
+    }
 
   } catch (error) {
     console.error('Download POST error:', error)
