@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { Response } from 'next/dist/server/web/spec-extension/response'
 import path from 'path'
 import fs from 'fs'
 import { promises as fsPromises } from 'fs'
@@ -9,7 +10,7 @@ const DOWNLOAD_CONFIG = {
     filename: 'Augment-v1.0.0-macOS.dmg',
     displayName: 'Augment for macOS',
     version: '1.0.0',
-    size: '15.2 MB',
+    size: '1.1 MB',
     mimeType: 'application/x-apple-diskimage',
     checksum: 'sha256:ff9f25ca608e28ec2d32375fa69d023fb2df13438cbc58f02dc5d468f63437ab',
     description: 'Universal Binary for Intel and Apple Silicon Macs',
@@ -95,8 +96,8 @@ export async function POST(request: NextRequest) {
       // Read the file contents
       const fileBuffer = await fsPromises.readFile(filePath)
       
-      return new NextResponse(fileBuffer, {
-        status: 200,
+      // Create a NextResponse with the buffer
+      const response = new NextResponse(fileBuffer, {
         headers: {
           'Content-Type': downloadInfo.mimeType,
           'Content-Length': fileStats.size.toString(),
@@ -106,6 +107,8 @@ export async function POST(request: NextRequest) {
           'X-File-Checksum': downloadInfo.checksum
         }
       })
+
+      return response
 
     } catch (err) {
       console.error('File access error:', err)
