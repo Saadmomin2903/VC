@@ -21,7 +21,7 @@ const DOWNLOAD_CONFIG = {
     mimeType: 'application/zip',
     checksum: 'sha256:b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef1234567a',
     description: 'Source code for Augment',
-    downloadUrl: 'https://github.com/user-attachments/files/20803204/Augment-v1.0.0-macOS.dmg.zip',
+    downloadUrl: 'https://github.com/Saadmomin2903/VC/releases/download/v1.0.1/Augment.dmg',
   },
 }
 
