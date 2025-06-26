@@ -81,8 +81,7 @@ export async function POST(request: NextRequest) {
               'Unknown'
     await trackDownload(type as DownloadType, userAgent, ip)
 
-    // Increment download count in Supabase
-    await supabase.rpc('increment_download_count', { download_type: type })
+    // Do NOT increment download count here!
 
     // Return download information as JSON instead of redirecting
     return NextResponse.json({ 
