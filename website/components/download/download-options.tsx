@@ -113,7 +113,7 @@ export function DownloadOptions() {
 
                   {option.name === "GitHub Release" && (
                     <a
-                      href="https://github.com/augment-app/augment"
+                      href="https://github.com/user-attachments/files/20803204/Augment-v1.0.0-macOS.dmg.zip"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-3 inline-flex items-center text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
