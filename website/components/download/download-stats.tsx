@@ -11,24 +11,24 @@ import {
   Monitor,
 } from "lucide-react";
 
-// Mock download statistics - in production, this would come from your analytics API
+// Beta download statistics - realistic numbers for a beta application
 const mockStats = {
-  totalDownloads: 12847,
-  downloadsToday: 156,
-  downloadsThisWeek: 1203,
-  downloadsThisMonth: 4891,
+  totalDownloads: 47,
+  downloadsToday: 3,
+  downloadsThisWeek: 12,
+  downloadsThisMonth: 28,
   platforms: {
-    macos: 12847,
+    macos: 47,
     windows: 0,
     linux: 0,
   },
   countries: [
-    { name: "United States", downloads: 4521, percentage: 35.2 },
-    { name: "United Kingdom", downloads: 2103, percentage: 16.4 },
-    { name: "Germany", downloads: 1876, percentage: 14.6 },
-    { name: "Canada", downloads: 1234, percentage: 9.6 },
-    { name: "Australia", downloads: 987, percentage: 7.7 },
-    { name: "Others", downloads: 2126, percentage: 16.5 },
+    { name: "India", downloads: 15, percentage: 31.9 },
+    { name: "United States", downloads: 12, percentage: 25.5 },
+    { name: "United Kingdom", downloads: 8, percentage: 17.0 },
+    { name: "Germany", downloads: 5, percentage: 10.6 },
+    { name: "Canada", downloads: 4, percentage: 8.5 },
+    { name: "Others", downloads: 3, percentage: 6.4 },
   ],
   recentDownloads: [
     {

@@ -1,51 +1,66 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react'
+import { motion } from "framer-motion";
+import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
 const teamMembers = [
   {
-    name: 'Alex Chen',
-    role: 'Founder & CEO',
-    bio: 'Former Apple engineer with 10+ years in macOS development. Passionate about creating tools that empower creativity.',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
+    name: "Saad Momin",
+    role: "Systems Engineer",
+    bio: "2024-25 BTech AIDS graduate passionate about AI, ML, and Operating Systems. Founder of Augment with a vision to solve file loss problems.",
+    avatar:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
     social: {
-      twitter: 'https://twitter.com/alexchen',
-      linkedin: 'https://linkedin.com/in/alexchen',
-      github: 'https://github.com/alexchen'
-    }
+      twitter: "https://x.com/saadlegend0",
+      linkedin: "https://www.linkedin.com/in/saad-momin-93254b22a",
+      github: "https://github.com/Saadmomin2903",
+    },
   },
   {
-    name: 'Sarah Kim',
-    role: 'Lead Designer',
-    bio: 'Design leader focused on creating intuitive experiences. Believes great design should be invisible.',
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
+    name: "Sahil Mulani",
+    role: "Full Stack Developer",
+    bio: "Experienced full-stack developer focused on creating robust and scalable applications. Passionate about clean code and user experience.",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
     social: {
-      twitter: 'https://twitter.com/sarahkim',
-      linkedin: 'https://linkedin.com/in/sarahkim'
-    }
+      github: "https://github.com/sahilmulani",
+      linkedin: "https://linkedin.com/in/sahilmulani",
+    },
   },
   {
-    name: 'Marcus Johnson',
-    role: 'Senior Engineer',
-    bio: 'Full-stack engineer specializing in performance optimization and system architecture.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+    name: "Sandesh Sawant",
+    role: "Full Stack Developer",
+    bio: "Full-stack developer specializing in modern web technologies and system integration. Committed to building reliable software solutions.",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
     social: {
-      github: 'https://github.com/marcusj',
-      linkedin: 'https://linkedin.com/in/marcusj'
-    }
+      github: "https://github.com/sandeshsawant",
+      linkedin: "https://linkedin.com/in/sandeshsawant",
+    },
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'Product Manager',
-    bio: 'Product strategist with a background in user research and data analysis. Ensures we build what users actually need.',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
+    name: "Aman Shaikh",
+    role: "DevOps Engineer",
+    bio: "DevOps engineer focused on automation, deployment pipelines, and infrastructure management. Ensures smooth and reliable software delivery.",
+    avatar:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
     social: {
-      twitter: 'https://twitter.com/emilyrodriguez',
-      linkedin: 'https://linkedin.com/in/emilyrodriguez'
-    }
-  }
-]
+      github: "https://github.com/amanshaikh",
+      linkedin: "https://linkedin.com/in/amanshaikh",
+    },
+  },
+  {
+    name: "Sohel Mujawar",
+    role: "Database Engineer",
+    bio: "Database engineer specializing in data architecture, optimization, and storage solutions. Ensures data integrity and performance.",
+    avatar:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+    social: {
+      github: "https://github.com/sohelmujawar",
+      linkedin: "https://linkedin.com/in/sohelmujawar",
+    },
+  },
+];
 
 export function Team() {
   return (
@@ -62,7 +77,8 @@ export function Team() {
               Meet our team
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              The passionate people behind Augment, dedicated to protecting your creative work.
+              A dedicated team of students and developers working together to
+              solve file loss problems for creators worldwide.
             </p>
           </motion.div>
         </div>
@@ -86,7 +102,7 @@ export function Team() {
                   />
                   <div className="absolute inset-0 rounded-full bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
                 </div>
-                
+
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   {member.name}
                 </h3>
@@ -96,7 +112,7 @@ export function Team() {
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
                   {member.bio}
                 </p>
-                
+
                 {/* Social links */}
                 <div className="mt-4 flex justify-center space-x-3">
                   {member.social.twitter && (
@@ -148,11 +164,12 @@ export function Team() {
               Want to join our mission?
             </h3>
             <p className="mt-2 text-gray-600 dark:text-gray-300">
-              We're always looking for talented people who share our passion for protecting creative work.
+              We're always looking for talented people who share our passion for
+              protecting creative work.
             </p>
             <div className="mt-6">
               <a
-                href="mailto:careers@augment-app.com"
+                href="mailto:saadmomin00313@gmail.com"
                 className="inline-flex items-center btn-primary"
               >
                 <Mail className="mr-2 h-4 w-4" />
@@ -163,5 +180,5 @@ export function Team() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

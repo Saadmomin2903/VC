@@ -1,54 +1,64 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { MessageCircle, Github, Twitter, Youtube, ExternalLink, Users } from 'lucide-react'
+import { motion } from "framer-motion";
+import {
+  MessageCircle,
+  Github,
+  Twitter,
+  Youtube,
+  ExternalLink,
+  Users,
+} from "lucide-react";
 
 const resources = [
   {
     icon: MessageCircle,
-    title: 'Community Forum',
-    description: 'Join discussions, share tips, and get help from other Augment users.',
-    link: 'https://community.augment-app.com',
-    linkText: 'Join Forum',
-    stats: '2.5K+ members',
-    color: 'text-blue-600 dark:text-blue-400'
+    title: "Email Support",
+    description:
+      "Get help and share feedback directly with our development team.",
+    link: "mailto:saadmomin00313@gmail.com",
+    linkText: "Contact Us",
+    stats: "Direct support",
+    color: "text-blue-600 dark:text-blue-400",
   },
   {
     icon: Github,
-    title: 'GitHub Repository',
-    description: 'View source code, report issues, and contribute to Augment\'s development.',
-    link: 'https://github.com/augment-app/augment',
-    linkText: 'View on GitHub',
-    stats: '500+ stars',
-    color: 'text-gray-600 dark:text-gray-400'
+    title: "GitHub Repository",
+    description:
+      "View source code, report issues, and contribute to Augment's development.",
+    link: "https://github.com/Saadmomin2903/VC",
+    linkText: "View on GitHub",
+    stats: "Open source",
+    color: "text-gray-600 dark:text-gray-400",
   },
   {
     icon: Twitter,
-    title: 'Twitter Updates',
-    description: 'Follow us for the latest news, updates, and tips about Augment.',
-    link: 'https://twitter.com/augment_app',
-    linkText: 'Follow @augment_app',
-    stats: '1.2K+ followers',
-    color: 'text-blue-500 dark:text-blue-400'
+    title: "Twitter Updates",
+    description:
+      "Follow us for the latest news, updates, and tips about Augment.",
+    link: "https://x.com/saadlegend0",
+    linkText: "Follow @saadlegend0",
+    stats: "Beta updates",
+    color: "text-blue-500 dark:text-blue-400",
   },
   {
     icon: Youtube,
-    title: 'Video Tutorials',
-    description: 'Watch step-by-step tutorials and feature demonstrations.',
-    link: 'https://youtube.com/@augment-app',
-    linkText: 'Watch Videos',
-    stats: '50+ videos',
-    color: 'text-red-600 dark:text-red-400'
-  }
-]
+    title: "Video Tutorials",
+    description: "Watch step-by-step tutorials and feature demonstrations.",
+    link: "https://youtube.com/@augment-app",
+    linkText: "Watch Videos",
+    stats: "50+ videos",
+    color: "text-red-600 dark:text-red-400",
+  },
+];
 
 const communityGuidelines = [
-  'Be respectful and helpful to other community members',
-  'Search existing topics before posting new questions',
-  'Provide clear details when reporting issues or asking for help',
-  'Share your tips and tricks to help others',
-  'Follow our code of conduct in all interactions'
-]
+  "Be respectful and helpful to other community members",
+  "Search existing topics before posting new questions",
+  "Provide clear details when reporting issues or asking for help",
+  "Share your tips and tricks to help others",
+  "Follow our code of conduct in all interactions",
+];
 
 export function CommunityResources() {
   return (
@@ -65,7 +75,8 @@ export function CommunityResources() {
               Join our community
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              Connect with other Augment users, share experiences, and stay updated with the latest developments.
+              Connect with other Augment users, share experiences, and stay
+              updated with the latest developments.
             </p>
           </motion.div>
         </div>
@@ -73,7 +84,7 @@ export function CommunityResources() {
         {/* Community resources */}
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {resources.map((resource, index) => {
-            const Icon = resource.icon
+            const Icon = resource.icon;
             return (
               <motion.div
                 key={resource.title}
@@ -85,17 +96,19 @@ export function CommunityResources() {
               >
                 <div className="card p-6 h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                   <div className="text-center">
-                    <div className={`mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 ${resource.color}`}>
+                    <div
+                      className={`mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 ${resource.color}`}
+                    >
                       <Icon className="h-6 w-6" />
                     </div>
-                    
+
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                       {resource.title}
                     </h3>
                     <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
                       {resource.description}
                     </p>
-                    
+
                     <div className="mt-3 text-xs font-medium text-gray-500 dark:text-gray-400">
                       {resource.stats}
                     </div>
@@ -114,7 +127,7 @@ export function CommunityResources() {
                   </div>
                 </div>
               </motion.div>
-            )
+            );
           })}
         </div>
 
@@ -133,12 +146,13 @@ export function CommunityResources() {
                 Community Guidelines
               </h3>
             </div>
-            
+
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Our community is built on mutual respect and helpfulness. Please follow these guidelines 
-              to ensure a positive experience for everyone.
+              Our community is built on mutual respect and helpfulness. Please
+              follow these guidelines to ensure a positive experience for
+              everyone.
             </p>
-            
+
             <ul className="space-y-3">
               {communityGuidelines.map((guideline, index) => (
                 <li
@@ -167,7 +181,8 @@ export function CommunityResources() {
               Ready to join the conversation?
             </h3>
             <p className="mt-4 text-blue-100">
-              Connect with thousands of Augment users who are passionate about protecting their creative work.
+              Connect with thousands of Augment users who are passionate about
+              protecting their creative work.
             </p>
             <div className="mt-6">
               <a
@@ -184,5 +199,5 @@ export function CommunityResources() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

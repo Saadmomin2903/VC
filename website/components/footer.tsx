@@ -23,17 +23,17 @@ const navigation = {
   social: [
     {
       name: "GitHub",
-      href: "https://github.com/augment-app",
+      href: "https://github.com/Saadmomin2903/VC",
       icon: Github,
     },
     {
       name: "Twitter",
-      href: "https://twitter.com/augment_app",
+      href: "https://x.com/saadlegend0",
       icon: Twitter,
     },
     {
       name: "Email",
-      href: "mailto:hello@augment-app.com",
+      href: "mailto:saadmomin00313@gmail.com",
       icon: Mail,
     },
   ],
@@ -59,9 +59,9 @@ export function Footer() {
                 <span>Augment</span>
               </Link>
               <p className="mt-4 text-gray-400">
-                Intelligent file versioning for macOS. Never lose work again
-                with automatic backup and version control that works seamlessly
-                in the background.
+                Intelligent file versioning for macOS. Currently in beta
+                development by a passionate team of students focused on solving
+                file loss problems for creators and professionals.
               </p>
               <div className="mt-6 flex space-x-4">
                 {navigation.social.map((item) => {
