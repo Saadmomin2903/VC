@@ -196,9 +196,12 @@ export function Hero() {
                 className="relative"
               >
                 <div className="relative mx-auto max-w-lg">
-                  {/* Main app window mockup */}
-                  <div className="relative rounded-2xl bg-white p-1 shadow-2xl dark:bg-gray-800">
-                    <div className="rounded-xl bg-gray-50 p-6 dark:bg-gray-900">
+                  {/* Main app window mockup with video preview */}
+                  <button
+                    onClick={() => setShowVideoModal(true)}
+                    className="group relative w-full rounded-2xl bg-white p-1 shadow-2xl dark:bg-gray-800 hover:shadow-3xl transition-all duration-300 hover:scale-105"
+                  >
+                    <div className="rounded-xl bg-gray-50 p-6 dark:bg-gray-900 relative overflow-hidden">
                       {/* Window controls */}
                       <div className="mb-4 flex items-center space-x-2">
                         <div className="h-3 w-3 rounded-full bg-red-400"></div>
@@ -232,8 +235,30 @@ export function Hero() {
                           </div>
                         </div>
                       </div>
+
+                      {/* Play Button Overlay */}
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-xl">
+                        <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 group-hover:bg-white group-hover:scale-110 transition-all duration-300 shadow-lg opacity-80 group-hover:opacity-100">
+                          <svg
+                            className="h-6 w-6 text-blue-600 ml-0.5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+
+                      {/* Video Label */}
+                      <div className="absolute top-2 right-2 bg-blue-600/90 text-white text-xs px-2 py-1 rounded font-medium opacity-80 group-hover:opacity-100 transition-opacity">
+                        Watch Demo
+                      </div>
                     </div>
-                  </div>
+                  </button>
 
                   {/* Floating version indicators */}
                   <motion.div
@@ -267,6 +292,128 @@ export function Hero() {
               </motion.div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Video Preview Section */}
+      <div className="relative -mt-20 pb-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{
+              opacity: isVisible ? 1 : 0,
+              y: isVisible ? 0 : 50,
+            }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mx-auto max-w-4xl"
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                See Augment in Action
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Watch how Augment automatically protects your files in real-time
+              </p>
+            </div>
+
+            <button
+              onClick={() => setShowVideoModal(true)}
+              className="group relative w-full aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-2 hover:scale-[1.02] transition-all duration-500 shadow-2xl hover:shadow-3xl"
+            >
+              {/* Video Thumbnail */}
+              <div className="relative h-full w-full rounded-xl overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+                {/* Simulated Desktop Environment */}
+                <div className="absolute inset-0 p-6">
+                  {/* macOS Desktop Background */}
+                  <div className="h-full w-full rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
+                    {/* Desktop Icons */}
+                    <div className="absolute top-4 left-4 space-y-4">
+                      <div className="flex flex-col items-center space-y-1">
+                        <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                          <svg
+                            className="w-8 h-8 text-white"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0h8v12H6V4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </div>
+                        <span className="text-white text-xs">
+                          Document.docx
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Augment App Window */}
+                    <div className="absolute bottom-6 right-6 w-64 h-40 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg border border-white/20">
+                      <div className="flex items-center justify-between p-2 border-b border-gray-200">
+                        <div className="flex space-x-1">
+                          <div className="w-2 h-2 rounded-full bg-red-400"></div>
+                          <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
+                          <div className="w-2 h-2 rounded-full bg-green-400"></div>
+                        </div>
+                        <div className="text-gray-700 text-xs font-medium">
+                          Augment
+                        </div>
+                        <div className="w-6"></div>
+                      </div>
+                      <div className="p-3 space-y-2">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-6 h-6 rounded bg-blue-500/20"></div>
+                          <div className="flex-1">
+                            <div className="h-1.5 bg-gray-300 rounded w-full mb-1"></div>
+                            <div className="h-1 bg-gray-200 rounded w-2/3"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <div className="w-6 h-6 rounded bg-green-500/20"></div>
+                          <div className="flex-1">
+                            <div className="h-1.5 bg-gray-300 rounded w-4/5 mb-1"></div>
+                            <div className="h-1 bg-gray-200 rounded w-1/2"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Large Play Button */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all duration-300">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-full p-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300 shadow-2xl">
+                    <svg
+                      className="h-12 w-12 text-blue-600 ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Video Info Badges */}
+                <div className="absolute bottom-4 left-4 flex space-x-2">
+                  <div className="bg-black/70 text-white text-sm px-3 py-1 rounded-full font-medium">
+                    Demo Video
+                  </div>
+                  <div className="bg-black/70 text-white text-sm px-3 py-1 rounded-full">
+                    2:30
+                  </div>
+                </div>
+
+                <div className="absolute top-4 right-4 bg-green-500/90 text-white text-xs px-2 py-1 rounded-full font-medium">
+                  ● LIVE
+                </div>
+              </div>
+            </button>
+          </motion.div>
         </div>
       </div>
 

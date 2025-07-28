@@ -188,13 +188,59 @@ export function HowItWorks() {
               <div className="relative">
                 <button
                   onClick={() => setShowVideoModal(true)}
-                  className="w-full aspect-video rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 p-1 hover:scale-105 transition-transform duration-200"
+                  className="group relative w-full aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  <div className="flex h-full items-center justify-center rounded-md bg-white dark:bg-gray-900">
-                    <div className="text-center">
-                      <div className="mx-auto h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                  {/* Video Thumbnail Background */}
+                  <div className="relative h-full w-full rounded-md overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+                    {/* Simulated App Interface Preview */}
+                    <div className="absolute inset-0 p-4">
+                      {/* Mock macOS Window */}
+                      <div className="bg-white/10 backdrop-blur-sm rounded-lg h-full border border-white/20">
+                        {/* Window Title Bar */}
+                        <div className="flex items-center justify-between p-3 border-b border-white/10">
+                          <div className="flex space-x-2">
+                            <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                            <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                            <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                          </div>
+                          <div className="text-white/80 text-xs font-medium">
+                            Augment
+                          </div>
+                          <div className="w-12"></div>
+                        </div>
+
+                        {/* Mock App Content */}
+                        <div className="p-4 space-y-3">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 rounded bg-blue-500/30"></div>
+                            <div className="flex-1">
+                              <div className="h-2 bg-white/20 rounded w-3/4 mb-1"></div>
+                              <div className="h-1.5 bg-white/10 rounded w-1/2"></div>
+                            </div>
+                          </div>
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 rounded bg-purple-500/30"></div>
+                            <div className="flex-1">
+                              <div className="h-2 bg-white/20 rounded w-2/3 mb-1"></div>
+                              <div className="h-1.5 bg-white/10 rounded w-1/3"></div>
+                            </div>
+                          </div>
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 rounded bg-green-500/30"></div>
+                            <div className="flex-1">
+                              <div className="h-2 bg-white/20 rounded w-4/5 mb-1"></div>
+                              <div className="h-1.5 bg-white/10 rounded w-2/5"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Play Button Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-full p-4 group-hover:bg-white group-hover:scale-110 transition-all duration-300 shadow-lg">
                         <svg
-                          className="h-8 w-8 text-primary"
+                          className="h-8 w-8 text-blue-600 ml-1"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -205,9 +251,16 @@ export function HowItWorks() {
                           />
                         </svg>
                       </div>
-                      <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                        Click to Watch Demo
-                      </p>
+                    </div>
+
+                    {/* Video Duration Badge */}
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                      2:30
+                    </div>
+
+                    {/* "Demo Video" Label */}
+                    <div className="absolute bottom-3 left-3 bg-blue-600/90 text-white text-xs px-2 py-1 rounded font-medium">
+                      Demo Video
                     </div>
                   </div>
                 </button>
