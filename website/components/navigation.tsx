@@ -59,7 +59,7 @@ export function Navigation() {
             className="flex items-center space-x-2 text-xl font-bold text-gray-900 dark:text-white focus-ring rounded-md"
           >
             <img
-              src="https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/noBgBlack.png"
+              src="https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/augment%20logo.png"
               alt="Augment Logo"
               className="h-8 w-8 object-contain"
             />

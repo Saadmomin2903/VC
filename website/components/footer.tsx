@@ -52,7 +52,7 @@ export function Footer() {
                 className="flex items-center space-x-2 text-xl font-bold"
               >
                 <img
-                  src="https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/noBgBlack.png"
+                  src="https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/augment%20logo.png"
                   alt="Augment Logo"
                   className="h-8 w-8 object-contain filter invert"
                 />
