@@ -1,62 +1,71 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { FolderPlus, FileText, Clock, Search, RotateCcw } from 'lucide-react'
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { FolderPlus, FileText, Clock, Search, RotateCcw } from "lucide-react";
+import { VideoModal } from "./video-modal";
 
 const steps = [
   {
     icon: FolderPlus,
-    title: 'Create a Space',
-    description: 'Choose a folder you work with regularly. Augment will monitor all files in this space.',
+    title: "Create a Space",
+    description:
+      "Choose a folder you work with regularly. Augment will monitor all files in this space.",
     details: [
-      'Select any folder on your Mac',
-      'Augment creates a monitoring space',
-      'All files are automatically tracked'
-    ]
+      "Select any folder on your Mac",
+      "Augment creates a monitoring space",
+      "All files are automatically tracked",
+    ],
   },
   {
     icon: FileText,
-    title: 'Work Normally',
-    description: 'Continue working with your files as usual. Augment runs silently in the background.',
+    title: "Work Normally",
+    description:
+      "Continue working with your files as usual. Augment runs silently in the background.",
     details: [
-      'Edit files with any application',
-      'Save changes as you normally would',
-      'No workflow changes required'
-    ]
+      "Edit files with any application",
+      "Save changes as you normally would",
+      "No workflow changes required",
+    ],
   },
   {
     icon: Clock,
-    title: 'Automatic Versioning',
-    description: 'Every time you save a file, Augment automatically creates a new version.',
+    title: "Automatic Versioning",
+    description:
+      "Every time you save a file, Augment automatically creates a new version.",
     details: [
-      'Instant version creation on save',
-      'Complete file history preserved',
-      'Smart deduplication saves space'
-    ]
+      "Instant version creation on save",
+      "Complete file history preserved",
+      "Smart deduplication saves space",
+    ],
   },
   {
     icon: Search,
-    title: 'Find Anything',
-    description: 'Use powerful search to find any version of any file, even from months ago.',
+    title: "Find Anything",
+    description:
+      "Use powerful search to find any version of any file, even from months ago.",
     details: [
-      'Search by filename or content',
-      'Filter by date, size, or type',
-      'Preview versions before opening'
-    ]
+      "Search by filename or content",
+      "Filter by date, size, or type",
+      "Preview versions before opening",
+    ],
   },
   {
     icon: RotateCcw,
-    title: 'Restore Easily',
-    description: 'Restore any previous version with a single click. Compare versions side by side.',
+    title: "Restore Easily",
+    description:
+      "Restore any previous version with a single click. Compare versions side by side.",
     details: [
-      'One-click version restoration',
-      'Side-by-side comparison view',
-      'Selective file restoration'
-    ]
-  }
-]
+      "One-click version restoration",
+      "Side-by-side comparison view",
+      "Selective file restoration",
+    ],
+  },
+];
 
 export function HowItWorks() {
+  const [showVideoModal, setShowVideoModal] = useState(false);
+
   return (
     <section className="section bg-gray-50 dark:bg-gray-800">
       <div className="container">
@@ -68,12 +77,12 @@ export function HowItWorks() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              How Augment{' '}
+              How Augment{" "}
               <span className="gradient-text">protects your work</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              Get started in minutes with our simple 5-step process. 
-              No complex setup or configuration required.
+              Get started in minutes with our simple 5-step process. No complex
+              setup or configuration required.
             </p>
           </motion.div>
         </div>
@@ -82,10 +91,10 @@ export function HowItWorks() {
           <div className="relative">
             {/* Connection line */}
             <div className="absolute left-8 top-16 bottom-16 w-0.5 bg-gradient-to-b from-primary to-purple-600 hidden lg:block"></div>
-            
+
             <div className="space-y-12">
               {steps.map((step, index) => {
-                const Icon = step.icon
+                const Icon = step.icon;
                 return (
                   <motion.div
                     key={step.title}
@@ -115,7 +124,7 @@ export function HowItWorks() {
                           <p className="mt-2 text-gray-600 dark:text-gray-300">
                             {step.description}
                           </p>
-                          
+
                           <ul className="mt-4 space-y-2">
                             {step.details.map((detail, detailIndex) => (
                               <li
@@ -131,7 +140,7 @@ export function HowItWorks() {
                       </div>
                     </div>
                   </motion.div>
-                )
+                );
               })}
             </div>
           </div>
@@ -152,39 +161,68 @@ export function HowItWorks() {
                   See it in action
                 </h3>
                 <p className="mt-4 text-gray-600 dark:text-gray-300">
-                  Watch how Augment seamlessly integrates into your workflow, 
+                  Watch how Augment seamlessly integrates into your workflow,
                   providing invisible protection for all your important files.
                 </p>
                 <div className="mt-6">
-                  <button className="btn-primary">
-                    <svg className="mr-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                  <button
+                    onClick={() => setShowVideoModal(true)}
+                    className="btn-primary"
+                  >
+                    <svg
+                      className="mr-2 h-5 w-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                        clipRule="evenodd"
+                      />
                     </svg>
                     Watch Demo Video
                   </button>
                 </div>
               </div>
-              
+
               <div className="relative">
-                <div className="aspect-video rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 p-1">
+                <button
+                  onClick={() => setShowVideoModal(true)}
+                  className="w-full aspect-video rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 p-1 hover:scale-105 transition-transform duration-200"
+                >
                   <div className="flex h-full items-center justify-center rounded-md bg-white dark:bg-gray-900">
                     <div className="text-center">
-                      <div className="mx-auto h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
-                        <svg className="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                      <div className="mx-auto h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                        <svg
+                          className="h-8 w-8 text-primary"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       </div>
                       <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                        Demo Video
+                        Click to Watch Demo
                       </p>
                     </div>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
         </motion.div>
       </div>
+
+      <VideoModal
+        isOpen={showVideoModal}
+        onClose={() => setShowVideoModal(false)}
+        videoUrl="https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/clideo_editor_b3335a34428e4ba8baabce102107257d.mp4"
+        title="Augment How It Works Demo"
+      />
     </section>
-  )
+  );
 }

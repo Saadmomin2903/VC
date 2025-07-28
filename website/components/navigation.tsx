@@ -58,22 +58,11 @@ export function Navigation() {
             href="/"
             className="flex items-center space-x-2 text-xl font-bold text-gray-900 dark:text-white focus-ring rounded-md"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-white">
-              <svg
-                className="h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
+            <img
+              src="https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/noBgBlack.png"
+              alt="Augment Logo"
+              className="h-8 w-8 object-contain"
+            />
             <span>Augment</span>
           </Link>
 

@@ -1,74 +1,83 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { 
-  Clock, 
-  Shield, 
-  Search, 
-  RotateCcw, 
-  HardDrive, 
+import { motion } from "framer-motion";
+import {
+  Clock,
+  Shield,
+  Search,
+  RotateCcw,
+  HardDrive,
   Bell,
   Zap,
   FileText,
-  Settings
-} from 'lucide-react'
+  Settings,
+} from "lucide-react";
 
 const features = [
   {
     icon: Clock,
-    title: 'Automatic Versioning',
-    description: 'Every file change is automatically saved as a new version. No manual intervention required.',
-    color: 'text-blue-600 dark:text-blue-400'
+    title: "Automatic Versioning",
+    description:
+      "Every file change is automatically saved as a new version. No manual intervention required.",
+    color: "text-blue-600 dark:text-blue-400",
   },
   {
     icon: Search,
-    title: 'Powerful Search',
-    description: 'Find any version of any file instantly with our advanced search and filtering system.',
-    color: 'text-green-600 dark:text-green-400'
+    title: "File Search",
+    description:
+      "Search across your spaces to find files and their version history.",
+    color: "text-green-600 dark:text-green-400",
   },
   {
     icon: RotateCcw,
-    title: 'Easy Recovery',
-    description: 'Restore previous versions with a single click. Compare versions side by side.',
-    color: 'text-purple-600 dark:text-purple-400'
+    title: "Easy Recovery",
+    description:
+      "Restore previous versions with a single click. Compare versions side by side.",
+    color: "text-purple-600 dark:text-purple-400",
   },
   {
     icon: HardDrive,
-    title: 'Smart Storage',
-    description: 'Intelligent storage management with automatic cleanup and configurable policies.',
-    color: 'text-orange-600 dark:text-orange-400'
+    title: "Storage Management",
+    description:
+      "Basic storage management with configurable cleanup policies for version history.",
+    color: "text-orange-600 dark:text-orange-400",
   },
   {
     icon: Bell,
-    title: 'Smart Notifications',
-    description: 'Get notified about storage issues, cleanup activities, and important events.',
-    color: 'text-red-600 dark:text-red-400'
+    title: "Basic Notifications",
+    description:
+      "Get notified about storage issues and important events in your spaces.",
+    color: "text-red-600 dark:text-red-400",
   },
   {
     icon: Shield,
-    title: 'Error Recovery',
-    description: 'Automatic error detection and recovery with user-friendly guidance.',
-    color: 'text-indigo-600 dark:text-indigo-400'
+    title: "Error Recovery",
+    description:
+      "Automatic error detection and recovery with user-friendly guidance.",
+    color: "text-indigo-600 dark:text-indigo-400",
   },
   {
     icon: Zap,
-    title: 'Lightning Fast',
-    description: 'Optimized performance with minimal system impact and instant file access.',
-    color: 'text-yellow-600 dark:text-yellow-400'
+    title: "Efficient Performance",
+    description:
+      "Designed for minimal system impact while monitoring your files.",
+    color: "text-yellow-600 dark:text-yellow-400",
   },
   {
     icon: FileText,
-    title: 'Universal Support',
-    description: 'Works with all file types - documents, images, code, and more.',
-    color: 'text-teal-600 dark:text-teal-400'
+    title: "Universal Support",
+    description:
+      "Works with all file types - documents, images, code, and more.",
+    color: "text-teal-600 dark:text-teal-400",
   },
   {
     icon: Settings,
-    title: 'Customizable',
-    description: 'Configure spaces, storage limits, cleanup policies, and notification preferences.',
-    color: 'text-gray-600 dark:text-gray-400'
-  }
-]
+    title: "Customizable",
+    description:
+      "Configure spaces, storage limits, cleanup policies, and notification preferences.",
+    color: "text-gray-600 dark:text-gray-400",
+  },
+];
 
 export function Features() {
   return (
@@ -82,19 +91,20 @@ export function Features() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Everything you need for{' '}
+              Everything you need for{" "}
               <span className="gradient-text">intelligent file versioning</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              Augment provides a comprehensive suite of features designed to keep your files safe, 
-              organized, and easily recoverable.
+              Augment provides essential file versioning features designed to
+              keep your files safe, organized, and easily recoverable. Currently
+              in beta with core functionality implemented.
             </p>
           </motion.div>
         </div>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => {
-            const Icon = feature.icon
+            const Icon = feature.icon;
             return (
               <motion.div
                 key={feature.title}
@@ -106,7 +116,9 @@ export function Features() {
               >
                 <div className="card p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                   <div className="flex items-start space-x-4">
-                    <div className={`flex h-12 w-12 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 ${feature.color}`}>
+                    <div
+                      className={`flex h-12 w-12 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 ${feature.color}`}
+                    >
                       <Icon className="h-6 w-6" />
                     </div>
                     <div className="flex-1">
@@ -120,7 +132,7 @@ export function Features() {
                   </div>
                 </div>
               </motion.div>
-            )
+            );
           })}
         </div>
 
@@ -139,9 +151,9 @@ export function Features() {
                   Zero Configuration Required
                 </h3>
                 <p className="mt-4 text-blue-100">
-                  Augment works out of the box with intelligent defaults. 
-                  Simply install, create your first space, and start working. 
-                  Advanced users can customize every aspect to their needs.
+                  Augment works out of the box with intelligent defaults. Simply
+                  install, create your first space, and start working. Advanced
+                  users can customize every aspect to their needs.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4">
                   <div className="flex items-center space-x-2">
@@ -179,5 +191,5 @@ export function Features() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

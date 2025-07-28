@@ -1,43 +1,43 @@
-import Link from 'next/link'
-import { Github, Twitter, Mail, Heart } from 'lucide-react'
+import Link from "next/link";
+import { Github, Twitter, Mail, Heart } from "lucide-react";
 
 const navigation = {
   product: [
-    { name: 'Features', href: '/features' },
-    { name: 'Download', href: '/download' },
-    { name: 'Documentation', href: '/documentation' },
-    { name: 'System Requirements', href: '/download#requirements' },
+    { name: "Features", href: "/features" },
+    { name: "Download", href: "/download" },
+    { name: "Documentation", href: "/documentation" },
+    { name: "System Requirements", href: "/download#requirements" },
   ],
   support: [
-    { name: 'Help Center', href: '/support' },
-    { name: 'Contact Us', href: '/support#contact' },
-    { name: 'Bug Reports', href: '/support#bugs' },
-    { name: 'Feature Requests', href: '/support#features' },
+    { name: "Help Center", href: "/support" },
+    { name: "Contact Us", href: "/support#contact" },
+    { name: "Bug Reports", href: "/support#bugs" },
+    { name: "Feature Requests", href: "/support#features" },
   ],
   company: [
-    { name: 'About', href: '/about' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms of Service', href: '/terms' },
+    { name: "About", href: "/about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "/terms" },
   ],
   social: [
     {
-      name: 'GitHub',
-      href: 'https://github.com/augment-app',
+      name: "GitHub",
+      href: "https://github.com/augment-app",
       icon: Github,
     },
     {
-      name: 'Twitter',
-      href: 'https://twitter.com/augment_app',
+      name: "Twitter",
+      href: "https://twitter.com/augment_app",
       icon: Twitter,
     },
     {
-      name: 'Email',
-      href: 'mailto:hello@augment-app.com',
+      name: "Email",
+      href: "mailto:hello@augment-app.com",
       icon: Mail,
     },
   ],
-}
+};
 
 export function Footer() {
   return (
@@ -47,32 +47,25 @@ export function Footer() {
           <div className="grid gap-8 lg:grid-cols-5">
             {/* Brand */}
             <div className="lg:col-span-2">
-              <Link href="/" className="flex items-center space-x-2 text-xl font-bold">
-                <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-white">
-                  <svg
-                    className="h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
+              <Link
+                href="/"
+                className="flex items-center space-x-2 text-xl font-bold"
+              >
+                <img
+                  src="https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/noBgBlack.png"
+                  alt="Augment Logo"
+                  className="h-8 w-8 object-contain filter invert"
+                />
                 <span>Augment</span>
               </Link>
               <p className="mt-4 text-gray-400">
-                Intelligent file versioning for macOS. Never lose work again with automatic 
-                backup and version control that works seamlessly in the background.
+                Intelligent file versioning for macOS. Never lose work again
+                with automatic backup and version control that works seamlessly
+                in the background.
               </p>
               <div className="mt-6 flex space-x-4">
                 {navigation.social.map((item) => {
-                  const Icon = item.icon
+                  const Icon = item.icon;
                   return (
                     <a
                       key={item.name}
@@ -84,7 +77,7 @@ export function Footer() {
                       <span className="sr-only">{item.name}</span>
                       <Icon className="h-5 w-5" />
                     </a>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -163,5 +156,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

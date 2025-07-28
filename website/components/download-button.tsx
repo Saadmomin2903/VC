@@ -146,7 +146,7 @@ export function DownloadButton({
             !downloadState.isDownloading &&
             !downloadState.success &&
             !downloadState.error && (
-              <span className="ml-2 text-sm opacity-75">v1.0</span>
+              <span className="ml-2 text-sm opacity-75">v1.0.2 Beta</span>
             )}
 
           {showSize &&
@@ -196,9 +196,9 @@ export function DownloadButton({
         downloadInfo={{
           filename:
             type === "augment-macos"
-              ? "Augment-v1.0.0-macOS.dmg"
-              : "Augment-v1.0.0-Source.zip",
-          version: "1.0.0",
+              ? "Augment.dmg"
+              : "Augment-v1.0.2-Source.zip",
+          version: "1.0.2",
           size: type === "augment-macos" ? "15.2 MB" : "2.8 MB",
           checksum:
             type === "augment-macos"
@@ -243,7 +243,7 @@ export function SimpleDownloadButton({
 
       const link = document.createElement("a");
       link.href = downloadUrl;
-      link.download = "Augment-v1.0.0-macOS.dmg"; // Explicit download attribute
+      link.download = "Augment.dmg"; // Explicit download attribute
       link.style.display = "none";
 
       document.body.appendChild(link);

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Download, Play, ArrowRight, Clock, Shield, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import { SimpleDownloadButton } from "./download-button";
+import { VideoModal } from "./video-modal";
 
 const features = [
   {
@@ -22,6 +23,7 @@ const features = [
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false);
+  const [showVideoModal, setShowVideoModal] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -58,7 +60,7 @@ export function Hero() {
                 >
                   <div className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
                     <Zap className="mr-2 h-4 w-4" />
-                    Now available for macOS
+                    Beta available for macOS
                   </div>
                 </motion.div>
 
@@ -85,9 +87,10 @@ export function Hero() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="text-xl text-gray-600 dark:text-gray-300 sm:text-2xl"
                   >
-                    Augment automatically saves every version of your files, so
-                    you can focus on creating without worrying about losing your
-                    work.
+                    Augment automatically saves every version of your files in
+                    organized "spaces", so you can focus on creating without
+                    worrying about losing your work. Currently in beta for early
+                    adopters.
                   </motion.p>
                 </div>
 
@@ -132,7 +135,10 @@ export function Hero() {
                     <ArrowRight className="ml-3 h-5 w-5 transition-transform group-hover:translate-x-2" />
                   </SimpleDownloadButton>
 
-                  <button className="btn-outline btn-lg group relative z-30">
+                  <button
+                    onClick={() => setShowVideoModal(true)}
+                    className="btn-outline btn-lg group relative z-30"
+                  >
                     <Play className="mr-2 h-5 w-5" />
                     Watch Demo
                   </button>
@@ -149,7 +155,8 @@ export function Hero() {
                   className="text-sm text-gray-500 dark:text-gray-400"
                 >
                   <p>
-                    Free download • No account required • macOS 11.0 or later
+                    Free beta download • No account required • macOS 11.0 or
+                    later
                   </p>
                 </motion.div>
 
@@ -262,6 +269,13 @@ export function Hero() {
           </div>
         </div>
       </div>
+
+      <VideoModal
+        isOpen={showVideoModal}
+        onClose={() => setShowVideoModal(false)}
+        videoUrl="https://8qsgkc8xxtebfxp0.public.blob.vercel-storage.com/clideo_editor_b3335a34428e4ba8baabce102107257d.mp4"
+        title="Augment Demo Video"
+      />
     </section>
   );
 }

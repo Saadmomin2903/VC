@@ -1,58 +1,70 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Star, Quote } from 'lucide-react'
+import { motion } from "framer-motion";
+import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: 'Sarah Chen',
-    role: 'Graphic Designer',
-    company: 'Creative Studio',
-    content: 'Augment saved my career. I accidentally deleted a client project and was able to recover everything instantly. The automatic versioning is a lifesaver.',
-    rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=64&h=64&fit=crop&crop=face'
+    name: "Alex M.",
+    role: "Beta Tester",
+    company: "Early Adopter",
+    content:
+      "The core versioning functionality works well. I like how it creates spaces for different projects. Still in beta but shows promise for file management.",
+    rating: 4,
+    avatar:
+      "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=64&h=64&fit=crop&crop=face",
   },
   {
-    name: 'Michael Rodriguez',
-    role: 'Software Developer',
-    company: 'Tech Startup',
-    content: 'As a developer, I thought I had version control covered with Git. But Augment protects all my other files too - docs, designs, everything. It\'s seamless.',
-    rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face'
+    name: "Jordan K.",
+    role: "Developer",
+    company: "Beta Program",
+    content:
+      "Interesting approach to file versioning outside of Git. The automatic monitoring is useful for documents and design files. Looking forward to future updates.",
+    rating: 4,
+    avatar:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face",
   },
   {
-    name: 'Emily Watson',
-    role: 'Writer & Author',
-    company: 'Freelance',
-    content: 'I\'ve lost manuscripts before to computer crashes. With Augment, I never worry about losing my work again. It just works in the background.',
-    rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face'
+    name: "Sam T.",
+    role: "Content Creator",
+    company: "Beta Tester",
+    content:
+      "Good concept for protecting creative work. The version history feature is helpful. As a beta, it has room for improvement but the foundation is solid.",
+    rating: 4,
+    avatar:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face",
   },
   {
-    name: 'David Kim',
-    role: 'Architect',
-    company: 'Design Firm',
-    content: 'The version comparison feature is incredible. I can see exactly what changed between iterations of my CAD files. Augment is essential for my workflow.',
-    rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face'
+    name: "Casey R.",
+    role: "Designer",
+    company: "Beta Tester",
+    content:
+      "The version comparison feature is useful for tracking changes in my design files. Still learning the interface but the core functionality works as expected.",
+    rating: 4,
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face",
   },
   {
-    name: 'Lisa Thompson',
-    role: 'Marketing Manager',
-    company: 'Fortune 500',
-    content: 'Our team collaborates on many documents. Augment helps us track changes and recover from mistakes. It\'s like having a time machine for our files.',
-    rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=64&h=64&fit=crop&crop=face'
+    name: "Taylor L.",
+    role: "Project Manager",
+    company: "Beta Program",
+    content:
+      "Helpful for keeping track of document versions in our team. The space concept is interesting. Looking forward to seeing how it develops.",
+    rating: 4,
+    avatar:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=64&h=64&fit=crop&crop=face",
   },
   {
-    name: 'James Wilson',
-    role: 'Video Editor',
-    company: 'Media Production',
-    content: 'Working with large video files, I need reliable backup. Augment\'s smart storage management keeps my versions organized without eating up disk space.',
-    rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&fit=crop&crop=face'
-  }
-]
+    name: "Morgan P.",
+    role: "Content Producer",
+    company: "Early Adopter",
+    content:
+      "Good for backing up creative work. The automatic versioning saves me from manually copying files. Beta software but stable enough for testing.",
+    rating: 4,
+    avatar:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&fit=crop&crop=face",
+  },
+];
 
 export function Testimonials() {
   return (
@@ -66,11 +78,12 @@ export function Testimonials() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Loved by{' '}
-              <span className="gradient-text">professionals worldwide</span>
+              Early feedback from{" "}
+              <span className="gradient-text">beta testers</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              See what our users say about how Augment has transformed their workflow and peace of mind.
+              See what early adopters say about their experience with Augment's
+              beta version.
             </p>
           </motion.div>
         </div>
@@ -135,14 +148,14 @@ export function Testimonials() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center space-x-2 rounded-full bg-green-100 px-4 py-2 text-green-800 dark:bg-green-900/20 dark:text-green-400">
+          <div className="inline-flex items-center space-x-2 rounded-full bg-blue-100 px-4 py-2 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400">
             <Star className="h-4 w-4 fill-current" />
             <span className="text-sm font-medium">
-              4.9/5 average rating from 1,000+ reviews
+              Early beta feedback from testers
             </span>
           </div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

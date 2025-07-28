@@ -16,11 +16,12 @@ export function CTA() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-              Ready to never lose work again?
+              Ready to try Augment Beta?
             </h2>
             <p className="mt-6 text-xl text-blue-100">
-              Join thousands of professionals who trust Augment to protect their
-              most important files. Download now and get instant peace of mind.
+              Join early adopters testing Augment's file versioning
+              capabilities. Download the beta and help shape the future of file
+              protection.
             </p>
           </motion.div>
 
@@ -59,7 +60,7 @@ export function CTA() {
               className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-lg font-semibold text-blue-600 transition-all duration-200 hover:bg-blue-50 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 group shadow-xl hover:shadow-2xl"
             >
               <Download className="mr-2 h-5 w-5" />
-              Download for macOS
+              Download Beta for macOS
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
 
@@ -108,8 +109,7 @@ export function CTA() {
             className="mt-12 text-center"
           >
             <p className="text-blue-100">
-              No credit card required • No account signup • Start protecting
-              your files in minutes
+              No credit card required • No account signup • Beta testing program
             </p>
           </motion.div>
         </div>

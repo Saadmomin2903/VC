@@ -1,52 +1,52 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { X, Check } from 'lucide-react'
+import { motion } from "framer-motion";
+import { X, Check } from "lucide-react";
 
 const comparisons = [
   {
-    feature: 'File versioning',
-    before: 'Manual file naming (final_v2_FINAL.doc)',
-    after: 'Automatic version tracking',
+    feature: "File versioning",
+    before: "Manual file naming (final_v2_FINAL.doc)",
+    after: "Automatic version tracking",
     beforeIcon: X,
-    afterIcon: Check
+    afterIcon: Check,
   },
   {
-    feature: 'Lost work recovery',
-    before: 'Lost work from crashes or mistakes',
-    after: 'Complete version history always available',
+    feature: "Lost work recovery",
+    before: "Lost work from crashes or mistakes",
+    after: "Complete version history always available",
     beforeIcon: X,
-    afterIcon: Check
+    afterIcon: Check,
   },
   {
-    feature: 'Version comparison',
-    before: 'No way to compare versions',
-    after: 'Side-by-side version comparison',
+    feature: "Version comparison",
+    before: "No way to compare versions",
+    after: "Side-by-side version comparison",
     beforeIcon: X,
-    afterIcon: Check
+    afterIcon: Check,
   },
   {
-    feature: 'File organization',
-    before: 'Cluttered folders with duplicates',
-    after: 'Clean, organized workspace',
+    feature: "File organization",
+    before: "Cluttered folders with duplicates",
+    after: "Clean, organized workspace",
     beforeIcon: X,
-    afterIcon: Check
+    afterIcon: Check,
   },
   {
-    feature: 'Storage management',
-    before: 'Manual cleanup of old files',
-    after: 'Intelligent automatic cleanup',
+    feature: "Storage management",
+    before: "Manual cleanup of old files",
+    after: "Intelligent automatic cleanup",
     beforeIcon: X,
-    afterIcon: Check
+    afterIcon: Check,
   },
   {
-    feature: 'Search capabilities',
-    before: 'Difficult to find old versions',
-    after: 'Instant search across all versions',
+    feature: "Search capabilities",
+    before: "Difficult to find old versions",
+    after: "Instant search across all versions",
     beforeIcon: X,
-    afterIcon: Check
-  }
-]
+    afterIcon: Check,
+  },
+];
 
 export function Comparison() {
   return (
@@ -60,11 +60,11 @@ export function Comparison() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Before vs. After{' '}
-              <span className="gradient-text">Augment</span>
+              Before vs. After <span className="gradient-text">Augment</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              See how Augment transforms your file management workflow from chaotic to organized.
+              See how Augment's beta version improves your file management
+              workflow.
             </p>
           </motion.div>
         </div>
@@ -85,7 +85,7 @@ export function Comparison() {
                     Before Augment
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   {comparisons.map((item, index) => (
                     <motion.div
@@ -125,7 +125,7 @@ export function Comparison() {
                     With Augment
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   {comparisons.map((item, index) => (
                     <motion.div
@@ -163,14 +163,13 @@ export function Comparison() {
         >
           <div className="rounded-2xl bg-gradient-to-r from-green-600 to-blue-600 p-8 text-white">
             <div className="text-center">
-              <h3 className="text-2xl font-bold">
-                The difference is clear
-              </h3>
+              <h3 className="text-2xl font-bold">The difference is clear</h3>
               <p className="mt-2 text-green-100">
-                Join thousands of users who have transformed their workflow with Augment
+                Join early adopters testing Augment's file versioning
+                capabilities
               </p>
             </div>
-            
+
             <div className="mt-8 grid gap-8 sm:grid-cols-3">
               <div className="text-center">
                 <div className="text-3xl font-bold">100%</div>
@@ -189,5 +188,5 @@ export function Comparison() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

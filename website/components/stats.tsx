@@ -1,34 +1,34 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Users, FileText, Clock, Shield } from 'lucide-react'
+import { motion } from "framer-motion";
+import { Users, FileText, Clock, Shield } from "lucide-react";
 
 const stats = [
   {
     icon: Users,
-    value: '10,000+',
-    label: 'Active Users',
-    description: 'Professionals trust Augment'
+    value: "Beta",
+    label: "Early Access",
+    description: "Join our beta program",
   },
   {
     icon: FileText,
-    value: '1M+',
-    label: 'Files Protected',
-    description: 'Versions safely stored'
+    value: "100%",
+    label: "File Coverage",
+    description: "All file types supported",
   },
   {
     icon: Clock,
-    value: '99.9%',
-    label: 'Uptime',
-    description: 'Reliable protection'
+    value: "24/7",
+    label: "Monitoring",
+    description: "Continuous file protection",
   },
   {
     icon: Shield,
-    value: '0',
-    label: 'Data Breaches',
-    description: 'Your files stay private'
-  }
-]
+    value: "0",
+    label: "Data Breaches",
+    description: "Your files stay private",
+  },
+];
 
 export function Stats() {
   return (
@@ -36,7 +36,7 @@ export function Stats() {
       <div className="container">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, index) => {
-            const Icon = stat.icon
+            const Icon = stat.icon;
             return (
               <motion.div
                 key={stat.label}
@@ -51,12 +51,14 @@ export function Stats() {
                 </div>
                 <div className="text-3xl font-bold">{stat.value}</div>
                 <div className="mt-1 text-lg font-medium">{stat.label}</div>
-                <div className="mt-1 text-sm text-blue-100">{stat.description}</div>
+                <div className="mt-1 text-sm text-blue-100">
+                  {stat.description}
+                </div>
               </motion.div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }
