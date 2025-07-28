@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { supabase } from '@/lib/supabase'
 
 
 // Download configuration
@@ -52,6 +53,9 @@ export async function GET(request: NextRequest) {
               'Unknown'
     await trackDownload(type as DownloadType, userAgent, ip)
 
+    // Increment download count in Supabase
+    await supabase.rpc('increment_download_count', { download_type: type })
+
     return NextResponse.redirect(downloadInfo.downloadUrl)
 
   } catch (error) {
@@ -76,6 +80,8 @@ export async function POST(request: NextRequest) {
               headers.get('x-real-ip')?.toString() || 
               'Unknown'
     await trackDownload(type as DownloadType, userAgent, ip)
+
+    // Do NOT increment download count here!
 
     // Return download information as JSON instead of redirecting
     return NextResponse.json({ 
